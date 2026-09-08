@@ -1,0 +1,83 @@
+{
+  "created_at": "2026-09-08T01:50:26.037273+00:00",
+  "requested_model": "gpt-5.6-luna",
+  "reasoning_effort": "high",
+  "protocol": "responses",
+  "inject_prompt": true,
+  "stream": true,
+  "accounts": 1,
+  "graded": 0,
+  "correct": 0,
+  "results": [
+    {
+      "account": "lucoo018",
+      "model": "gpt-5.6-luna",
+      "run": 1,
+      "text": null,
+      "correct": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "attempts": 4,
+      "elapsed_seconds": 11.274,
+      "error": "HTTP 503: No available channel for model gpt-5.6-luna under group pro (distributor) (request id: 202609080150248847870028268d9d61Q8uCcMH) (after 4 attempts)",
+      "tokens_per_second": null
+    },
+    {
+      "account": "lucoo018",
+      "model": "gpt-5.6-luna",
+      "run": 2,
+      "text": null,
+      "correct": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "attempts": 4,
+      "elapsed_seconds": 12.224,
+      "error": "HTTP 503: No available channel for model gpt-5.6-luna under group pro (distributor) (request id: 202609080150258677404298268d9d6Q25yfAjE) (after 4 attempts)",
+      "tokens_per_second": null
+    },
+    {
+      "account": "lucoo018",
+      "model": "gpt-5.6-luna",
+      "run": 3,
+      "text": null,
+      "correct": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "attempts": 4,
+      "elapsed_seconds": 11.364,
+      "error": "HTTP 503: No available channel for model gpt-5.6-luna under group pro (distributor) (request id: 202609080150249766288388268d9d6hIm0aq3M) (after 4 attempts)",
+      "tokens_per_second": null
+    },
+    {
+      "account": "lucoo018",
+      "model": "gpt-5.6-luna",
+      "run": 4,
+      "text": null,
+      "correct": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "attempts": 4,
+      "elapsed_seconds": 11.27,
+      "error": "HTTP 503: No available channel for model gpt-5.6-luna under group pro (distributor) (request id: 202609080150249125219538268d9d6gKaPBiXB) (after 4 attempts)",
+      "tokens_per_second": null
+    },
+    {
+      "account": "lucoo018",
+      "model": "gpt-5.6-luna",
+      "run": 5,
+      "text": null,
+      "correct": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "attempts": 4,
+      "elapsed_seconds": 11.135,
+      "error": "HTTP 503: No available channel for model gpt-5.6-luna under group pro (distributor) (request id: 202609080150244666157578268d9d66Nf5UrCT) (after 4 attempts)",
+      "tokens_per_second": null
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "api_endpoint": "https://lucen.plus",
+  "model_name": "claude-opus-5",
+  "reasoning_effort": "high",
+  "protocol": "anthropic",
+  "stream": true,
+  "tests": 5,
+  "graded": 0,
+  "correct": 0,
+  "results": [
+    {
+      "run": 1,
+      "text": null,
+      "correct": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "attempts": 4,
+      "elapsed_seconds": 22.507,
+      "error": "Request failed for https://lucen.plus/v1/messages: Remote end closed connection without response (after 4 attempts)"
+    },
+    {
+      "run": 2,
+      "text": null,
+      "correct": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "attempts": 4,
+      "elapsed_seconds": 22.415,
+      "error": "Request failed for https://lucen.plus/v1/messages: Remote end closed connection without response (after 4 attempts)"
+    },
+    {
+      "run": 3,
+      "text": null,
+      "correct": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "attempts": 4,
+      "elapsed_seconds": 22.542,
+      "error": "Request failed for https://lucen.plus/v1/messages: Remote end closed connection without response (after 4 attempts)"
+    },
+    {
+      "run": 4,
+      "text": null,
+      "correct": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "attempts": 4,
+      "elapsed_seconds": 24.875,
+      "error": "HTTP 502: Upstream service temporarily unavailable (after 4 attempts)"
+    },
+    {
+      "run": 5,
+      "text": null,
+      "correct": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "attempts": 4,
+      "elapsed_seconds": 22.503,
+      "error": "Request failed for https://lucen.plus/v1/messages: Remote end closed connection without response (after 4 attempts)"
+    }
+  ]
+}

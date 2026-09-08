@@ -23,7 +23,16 @@ class CandyEvalCLIContractTest(unittest.TestCase):
         self.assertEqual("secret", args.key)
         self.assertEqual(DEFAULT_MODEL, args.model)
         self.assertEqual("responses", args.protocol)
-        self.assertEqual(600.0, args.timeout)
+        self.assertEqual(300.0, args.timeout)
+        self.assertFalse(args.inject_prompt)
+
+    def test_system_prompt_injection_can_be_enabled(self) -> None:
+        argv = [
+            "candy_eval.py", "--url", "https://example.com", "--key", "secret",
+            "--inject-prompt",
+        ]
+        with patch.object(sys, "argv", argv):
+            self.assertTrue(parse_args().inject_prompt)
 
     def test_default_protocol_stays_responses_for_claude_model(self) -> None:
         expected = ResponseResult("21", 1, 1, 1)
@@ -32,7 +41,7 @@ class CandyEvalCLIContractTest(unittest.TestCase):
 
         self.assertEqual(expected, result)
         self.assertEqual("https://example.com/v1/responses", request.call_args.args[0])
-        self.assertEqual(600.0, request.call_args.kwargs["timeout"])
+        self.assertEqual(300.0, request.call_args.kwargs["timeout"])
 
     def test_anthropic_protocol_is_selected_explicitly(self) -> None:
         expected = ResponseResult("21", 1, 1, None)
@@ -45,7 +54,7 @@ class CandyEvalCLIContractTest(unittest.TestCase):
 
         self.assertEqual(expected, result)
         self.assertEqual("https://example.com/v1/messages", request.call_args.args[0])
-        self.assertEqual(600.0, request.call_args.kwargs["timeout"])
+        self.assertEqual(300.0, request.call_args.kwargs["timeout"])
 
     def test_common_provider_urls_are_normalized_without_duplicate_v1(self) -> None:
         cases = {
@@ -67,7 +76,10 @@ class CandyEvalCLIContractTest(unittest.TestCase):
             "elapsed_seconds": 1.0, "error": None,
         }
         target = AccountTarget("provider", "https://example.com/v1/responses", "secret", "model")
-        args = SimpleNamespace(reasoning_effort="high", timeout=10, protocol="anthropic")
+        args = SimpleNamespace(
+            reasoning_effort="high", timeout=10, protocol="anthropic",
+            system_prompt="system instructions",
+        )
 
         _, correct, record = run_one(target, 1, args)
 
@@ -76,6 +88,7 @@ class CandyEvalCLIContractTest(unittest.TestCase):
         evaluate_once.assert_called_once_with(
             1, target.responses_url, target.api_key, model=target.model,
             reasoning_effort="high", timeout=10, protocol="anthropic",
+            system_prompt="system instructions",
         )
 
     def test_sub2api_entry_defaults_match_direct_entry(self) -> None:
@@ -87,8 +100,9 @@ class CandyEvalCLIContractTest(unittest.TestCase):
         self.assertEqual(DEFAULT_MODEL, eval_args.model)
         self.assertEqual("responses", eval_args.protocol)
         self.assertEqual(DEFAULT_MODEL, extract_args.model)
-        self.assertEqual(600.0, eval_args.timeout)
-        self.assertEqual(600.0, extract_args.timeout)
+        self.assertEqual(300.0, eval_args.timeout)
+        self.assertEqual(300.0, extract_args.timeout)
+        self.assertFalse(eval_args.inject_prompt)
 
     def test_cup_entry_uses_the_same_connection_contract(self) -> None:
         argv = ["cup_eval.py", "--url", "https://example.com", "--key", "secret"]
@@ -99,7 +113,7 @@ class CandyEvalCLIContractTest(unittest.TestCase):
         self.assertEqual("secret", args.key)
         self.assertEqual(DEFAULT_MODEL, args.model)
         self.assertEqual("responses", args.protocol)
-        self.assertEqual(600.0, args.timeout)
+        self.assertEqual(300.0, args.timeout)
 
     def test_timeout_can_be_overridden(self) -> None:
         argv = [

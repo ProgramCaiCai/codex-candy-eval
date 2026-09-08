@@ -17,7 +17,7 @@ def fetch_account_targets(
     sub2api_url: str,
     model: str,
     *,
-    timeout: float = 600.0,
+    timeout: float = 300.0,
     admin_token: str | None = None,
     admin_email: str | None = None,
     admin_password: str | None = None,
@@ -69,7 +69,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--totp-code", default=os.getenv("SUB2API_TOTP_CODE"))
     parser.add_argument("-m", "--model", default=DEFAULT_MODEL)
     parser.add_argument("--account")
-    parser.add_argument("--timeout", type=positive_float, default=600.0)
+    parser.add_argument("--timeout", type=positive_float, default=300.0)
     parser.add_argument("--json", action="store_true", help="输出机器可读 JSON")
     parser.add_argument("--include-key", action="store_true", help="JSON 输出中包含 API key")
     return parser.parse_args()

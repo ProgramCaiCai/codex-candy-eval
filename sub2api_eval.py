@@ -11,10 +11,12 @@ import unicodedata
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
+from typing import Callable
 
 from candy_eval import (
     DEFAULT_MODEL,
     evaluate_once,
+    load_system_prompt,
     parse_protocol,
     positive_float,
     positive_int,
@@ -23,6 +25,7 @@ from sub2api_info_extract import AccountTarget, fetch_account_targets, load_env_
 
 EFFORTS = ["none", "low", "medium", "high", "xhigh", "max", "ultra"]
 RunResult = tuple[list[object], bool | None, dict[str, object]]
+ResultCallback = Callable[[int, int, RunResult], None]
 
 
 def parse_args() -> argparse.Namespace:
@@ -43,8 +46,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("-r", "--reasoning-effort", choices=EFFORTS, default="high")
     parser.add_argument("-n", "--tests", type=positive_int, default=1, help="每个账号的测试次数")
     parser.add_argument("-j", "--workers", type=positive_int, default=4)
-    parser.add_argument("--timeout", type=positive_float, default=600.0)
+    parser.add_argument("--timeout", type=positive_float, default=300.0)
     parser.add_argument("--account", help="只测试名称包含该文本的账号（不区分大小写）")
+    parser.add_argument("--inject-prompt", action="store_true",
+                        help="注入 candy_eval 同目录的 system_prompt.txt")
     parser.add_argument("--list-only", action="store_true", help="只列出匹配账号，不发送模型请求")
     parser.add_argument("--output", help="JSON 报告路径；默认写入 reports/ 下的时间戳文件")
     return parser.parse_args()
@@ -78,6 +83,7 @@ def run_one(
         reasoning_effort=args.reasoning_effort,
         timeout=args.timeout,
         protocol=args.protocol,
+        system_prompt=getattr(args, "system_prompt", None),
     )
     correct = result["correct"] if isinstance(result["correct"], bool) else None
     elapsed = float(result["elapsed_seconds"])
@@ -99,7 +105,11 @@ def run_one(
     return row, correct, record
 
 
-def run_batch(targets: list[AccountTarget], args: argparse.Namespace) -> list[RunResult]:
+def run_batch(
+    targets: list[AccountTarget],
+    args: argparse.Namespace,
+    on_result: ResultCallback | None = None,
+) -> list[RunResult]:
     jobs = [(target, run) for target in targets for run in range(1, args.tests + 1)]
     results: list[tuple[int, RunResult]] = []
     with ThreadPoolExecutor(max_workers=min(args.workers, len(jobs))) as executor:
@@ -108,8 +118,23 @@ def run_batch(targets: list[AccountTarget], args: argparse.Namespace) -> list[Ru
             for index, (target, run) in enumerate(jobs)
         }
         for future in as_completed(future_indexes):
-            results.append((future_indexes[future], future.result()))
+            result = future.result()
+            results.append((future_indexes[future], result))
+            if on_result is not None:
+                on_result(len(results), len(jobs), result)
     return [result for _, result in sorted(results)]
+
+
+def print_result(completed: int, total: int, result: RunResult) -> None:
+    row, correct, record = result
+    status = "✓" if correct else "✗" if correct is False else "ERROR"
+    attempts = record.get("attempts", "-")
+    detail = row[3] if correct is not None else preview(str(record.get("error") or "unknown error"))
+    print(
+        f"[{completed}/{total}] {status} {record['account']} run={record['run']} "
+        f"time={record['elapsed_seconds']}s attempts={attempts} {detail}",
+        flush=True,
+    )
 
 
 def write_report(
@@ -128,6 +153,7 @@ def write_report(
         "requested_model": args.model,
         "reasoning_effort": args.reasoning_effort,
         "protocol": args.protocol,
+        "inject_prompt": getattr(args, "inject_prompt", False),
         "stream": True,
         "accounts": len(targets),
         "graded": len(graded),
@@ -150,6 +176,7 @@ def main() -> int:
     setup_console()
     args = parse_args()
     try:
+        args.system_prompt = load_system_prompt() if args.inject_prompt else None
         targets, skipped = discover_targets(args)
     except Exception as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
@@ -161,11 +188,7 @@ def main() -> int:
         print_targets(targets, skipped)
         return 0
 
-    results = run_batch(targets, args)
-    rows = [row for row, _, _ in results]
-    headers = ["Account", "Run", "Model", "Answer", "In", "Out", "Reason", "Time(s)", "TPS", "OK"]
-    aligns = ["left", "right", "left", "left", "right", "right", "right", "right", "right", "center"]
-    print(render_table(headers, rows, aligns))
+    results = run_batch(targets, args, print_result)
     report_path = write_report(args, targets, results)
     graded = [correct for _, correct, _ in results if correct is not None]
     correct = sum(graded)

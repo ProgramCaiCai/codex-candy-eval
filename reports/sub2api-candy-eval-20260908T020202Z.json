@@ -1,0 +1,83 @@
+{
+  "created_at": "2026-09-08T02:02:02.054745+00:00",
+  "requested_model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "protocol": "responses",
+  "inject_prompt": true,
+  "stream": true,
+  "accounts": 1,
+  "graded": 0,
+  "correct": 0,
+  "results": [
+    {
+      "account": "lucoo018",
+      "model": "gpt-6-astra",
+      "run": 1,
+      "text": null,
+      "correct": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "attempts": 4,
+      "elapsed_seconds": 93.123,
+      "error": "Request failed for https://lucoo.ai/v1/responses: stream ended before response.completed (after 4 attempts)",
+      "tokens_per_second": null
+    },
+    {
+      "account": "lucoo018",
+      "model": "gpt-6-astra",
+      "run": 2,
+      "text": null,
+      "correct": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "attempts": 4,
+      "elapsed_seconds": 105.487,
+      "error": "Request failed for https://lucoo.ai/v1/responses: stream ended before response.completed (after 4 attempts)",
+      "tokens_per_second": null
+    },
+    {
+      "account": "lucoo018",
+      "model": "gpt-6-astra",
+      "run": 3,
+      "text": null,
+      "correct": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "attempts": 4,
+      "elapsed_seconds": 113.37,
+      "error": "Request failed for https://lucoo.ai/v1/responses: stream ended before response.completed (after 4 attempts)",
+      "tokens_per_second": null
+    },
+    {
+      "account": "lucoo018",
+      "model": "gpt-6-astra",
+      "run": 4,
+      "text": null,
+      "correct": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "attempts": 4,
+      "elapsed_seconds": 87.463,
+      "error": "Request failed for https://lucoo.ai/v1/responses: stream ended before response.completed (after 4 attempts)",
+      "tokens_per_second": null
+    },
+    {
+      "account": "lucoo018",
+      "model": "gpt-6-astra",
+      "run": 5,
+      "text": null,
+      "correct": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "attempts": 4,
+      "elapsed_seconds": 112.66,
+      "error": "Request failed for https://lucoo.ai/v1/responses: stream ended before response.completed (after 4 attempts)",
+      "tokens_per_second": null
+    }
+  ]
+}

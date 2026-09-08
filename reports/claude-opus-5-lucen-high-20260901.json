@@ -1,0 +1,67 @@
+{
+  "api_endpoint": "https://lucen.plus",
+  "model_name": "claude-opus-5",
+  "reasoning_effort": "high",
+  "protocol": "anthropic",
+  "stream": true,
+  "tests": 5,
+  "graded": 0,
+  "correct": 0,
+  "results": [
+    {
+      "run": 1,
+      "text": null,
+      "correct": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "attempts": 1,
+      "elapsed_seconds": 1.104,
+      "error": "HTTP 404: Model \"claude-opus-5\" is not supported by any configured account in this group"
+    },
+    {
+      "run": 2,
+      "text": null,
+      "correct": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "attempts": 1,
+      "elapsed_seconds": 1.367,
+      "error": "HTTP 404: Model \"claude-opus-5\" is not supported by any configured account in this group"
+    },
+    {
+      "run": 3,
+      "text": null,
+      "correct": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "attempts": 1,
+      "elapsed_seconds": 1.227,
+      "error": "HTTP 404: Model \"claude-opus-5\" is not supported by any configured account in this group"
+    },
+    {
+      "run": 4,
+      "text": null,
+      "correct": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "attempts": 1,
+      "elapsed_seconds": 1.336,
+      "error": "HTTP 404: Model \"claude-opus-5\" is not supported by any configured account in this group"
+    },
+    {
+      "run": 5,
+      "text": null,
+      "correct": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "attempts": 1,
+      "elapsed_seconds": 1.156,
+      "error": "HTTP 404: Model \"claude-opus-5\" is not supported by any configured account in this group"
+    }
+  ]
+}

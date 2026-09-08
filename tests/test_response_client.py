@@ -163,6 +163,23 @@ class ResponseClientTest(unittest.TestCase):
         self.assertEqual({"effort": "high"}, upstream[3]["reasoning"])
         self.assertFalse(upstream[3]["store"])
         self.assertTrue(upstream[3]["stream"])
+        self.assertNotIn("instructions", upstream[3])
+
+    def test_responses_protocol_injects_system_prompt_as_instructions(self) -> None:
+        test_response(
+            self.base_url + "/upstream", "secret", timeout=2,
+            prompt="candy prompt", system_prompt="system instructions",
+        )
+
+        self.assertEqual("system instructions", FakeAPIHandler.requests[-1][3]["instructions"])
+
+    def test_sub2api_admin_api_key_uses_x_api_key_header(self) -> None:
+        client = Sub2APIClient(self.base_url, timeout=2, token="admin-test-key")
+        accounts = client.export_api_key_accounts()
+        self.assertEqual(1, len(accounts))
+        request = FakeAPIHandler.requests[-1]
+        self.assertEqual("admin-test-key", request[2]["X-Api-Key"])
+        self.assertNotIn("Authorization", request[2])
 
     def test_claude_model_uses_anthropic_messages_protocol(self) -> None:
         result = test_response(
@@ -186,6 +203,14 @@ class ResponseClientTest(unittest.TestCase):
         self.assertEqual({"type": "adaptive"}, upstream[3]["thinking"])
         self.assertEqual({"effort": "high"}, upstream[3]["output_config"])
         self.assertTrue(upstream[3]["stream"])
+
+    def test_anthropic_protocol_injects_system_prompt(self) -> None:
+        test_response(
+            self.base_url + "/anthropic", "secret", "claude-opus-5",
+            timeout=2, protocol="anthropic", system_prompt="system instructions",
+        )
+
+        self.assertEqual("system instructions", FakeAPIHandler.requests[-1][3]["system"])
 
     def test_account_target_repr_hides_api_key(self) -> None:
         target = AccountTarget("name", "https://example.com/v1/responses", "secret", "model")
@@ -223,6 +248,7 @@ class ResponseClientTest(unittest.TestCase):
 
     def test_run_batch_allows_same_provider_runs_to_execute_concurrently(self) -> None:
         barrier = threading.Barrier(2, timeout=1)
+        progress = []
 
         def fake_run(target, run, args):
             barrier.wait()
@@ -231,9 +257,17 @@ class ResponseClientTest(unittest.TestCase):
         target = AccountTarget("same-provider", "https://example.com", "secret", "model")
         args = SimpleNamespace(tests=2, workers=2)
         with patch("sub2api_eval.run_one", side_effect=fake_run):
-            results = run_batch([target], args)
+            results = run_batch(
+                [target], args,
+                lambda completed, total, result: progress.append(
+                    (completed, total, result[2]["run"])
+                ),
+            )
 
         self.assertEqual([1, 2], [record["run"] for _, _, record in results])
+        self.assertEqual([1, 2], [completed for completed, _, _ in progress])
+        self.assertEqual([2, 2], [total for _, total, _ in progress])
+        self.assertEqual([1, 2], sorted(run for _, _, run in progress))
 
     def test_report_persists_full_text_and_reasoning_tokens(self) -> None:
         with tempfile.TemporaryDirectory() as directory:

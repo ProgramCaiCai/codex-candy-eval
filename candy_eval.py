@@ -23,10 +23,12 @@ CANDY_PROMPT = """不使用任何外部工具回答以下问题：
         苹果味  桃子味  西瓜味
 圆形       7      9      8
 五角星形   7      6      4
+
 """
 ANSWER_PATTERN = re.compile(r"(?<!\d)21(?!\d)")
 DEFAULT_MODEL = "gpt-5.6-sol"
 DEFAULT_PROTOCOL = "responses"
+SYSTEM_PROMPT_PATH = Path(__file__).with_name("system_prompt.txt")
 PROTOCOL_ALIASES = {
     "response": "responses",
     "responses": "responses",
@@ -41,9 +43,10 @@ def test_response(
     model: str = DEFAULT_MODEL,
     *,
     reasoning_effort: str = "high",
-    timeout: float = 600.0,
+    timeout: float = 300.0,
     prompt: str = CANDY_PROMPT,
     protocol: str = DEFAULT_PROTOCOL,
+    system_prompt: str | None = None,
 ) -> ResponseResult:
     selected = resolve_protocol(protocol)
     endpoint = normalize_endpoint(url, selected)
@@ -56,6 +59,8 @@ def test_response(
             "output_config": {"effort": reasoning_effort},
             "stream": True,
         }
+        if system_prompt is not None:
+            payload["system"] = system_prompt
         return stream_anthropic_request(endpoint, payload, key, timeout=timeout)
     payload = {
         "model": model,
@@ -64,6 +69,8 @@ def test_response(
         "store": False,
         "stream": True,
     }
+    if system_prompt is not None:
+        payload["instructions"] = system_prompt
     return stream_response_request(endpoint, payload, key, timeout=timeout)
 
 
@@ -74,9 +81,10 @@ def evaluate_once(
     *,
     model: str = DEFAULT_MODEL,
     reasoning_effort: str = "high",
-    timeout: float = 600.0,
+    timeout: float = 300.0,
     prompt: str = CANDY_PROMPT,
     protocol: str = DEFAULT_PROTOCOL,
+    system_prompt: str | None = None,
 ) -> dict[str, object]:
     started = time.perf_counter()
     try:
@@ -88,6 +96,7 @@ def evaluate_once(
             timeout=timeout,
             prompt=prompt,
             protocol=protocol,
+            system_prompt=system_prompt,
         )
         return _result_dict(run, result, time.perf_counter() - started)
     except Exception as exc:
@@ -102,9 +111,10 @@ def run_tests(
     tests: int = 1,
     workers: int = 1,
     reasoning_effort: str = "high",
-    timeout: float = 600.0,
+    timeout: float = 300.0,
     prompt: str = CANDY_PROMPT,
     protocol: str = DEFAULT_PROTOCOL,
+    system_prompt: str | None = None,
 ) -> list[dict[str, object]]:
     arguments = (url, key)
     options = {
@@ -113,6 +123,7 @@ def run_tests(
         "timeout": timeout,
         "prompt": prompt,
         "protocol": protocol,
+        "system_prompt": system_prompt,
     }
 
     results: list[dict[str, object]] = []
@@ -130,7 +141,7 @@ def add_direct_arguments(
     parser: argparse.ArgumentParser,
     *,
     default_effort: str = "high",
-    default_timeout: float = 600.0,
+    default_timeout: float = 300.0,
     default_prompt: str = CANDY_PROMPT,
     default_output: str | None = None,
 ) -> None:
@@ -150,12 +161,15 @@ def add_direct_arguments(
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     add_direct_arguments(parser)
+    parser.add_argument("--inject-prompt", action="store_true",
+                        help="注入同目录 system_prompt.txt 作为 system prompt")
     return parser.parse_args()
 
 
 def main() -> int:
     args = parse_args()
     try:
+        system_prompt = load_system_prompt() if args.inject_prompt else None
         results = run_tests(
             args.url,
             args.key,
@@ -166,6 +180,7 @@ def main() -> int:
             timeout=args.timeout,
             prompt=args.prompt,
             protocol=args.protocol,
+            system_prompt=system_prompt,
         )
     except Exception as exc:
         print(json.dumps({"error": str(exc)}, ensure_ascii=False))
@@ -176,6 +191,7 @@ def main() -> int:
         "model": args.model,
         "reasoning_effort": args.reasoning_effort,
         "protocol": args.protocol,
+        "inject_prompt": args.inject_prompt,
         "stream": True,
         "tests": args.tests,
         "graded": len(graded),
@@ -230,6 +246,10 @@ def positive_int(value: str) -> int:
     if parsed <= 0:
         raise argparse.ArgumentTypeError("must be greater than zero")
     return parsed
+
+
+def load_system_prompt() -> str:
+    return SYSTEM_PROMPT_PATH.read_text(encoding="utf-8")
 
 
 def positive_float(value: str) -> float:

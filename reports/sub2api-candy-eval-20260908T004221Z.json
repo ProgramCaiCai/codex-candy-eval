@@ -1,0 +1,26 @@
+{
+  "created_at": "2026-09-08T00:42:21.854034+00:00",
+  "requested_model": "gpt-5.6-sol",
+  "reasoning_effort": "high",
+  "protocol": "responses",
+  "stream": true,
+  "accounts": 1,
+  "graded": 0,
+  "correct": 0,
+  "results": [
+    {
+      "account": "lucoo018",
+      "model": "gpt-5.6-sol",
+      "run": 1,
+      "text": null,
+      "correct": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "attempts": 4,
+      "elapsed_seconds": 27.009,
+      "error": "Request failed for https://lucoo.ai/v1/responses: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000) (after 4 attempts)",
+      "tokens_per_second": null
+    }
+  ]
+}

@@ -61,7 +61,11 @@ def _json_request(
     if body is not None:
         headers["Content-Type"] = "application/json"
     if token:
-        headers["Authorization"] = f"Bearer {token}"
+        # sub2api 管理 API key 使用独立请求头；JWT 仍使用 Bearer 认证。
+        if token.startswith("admin-"):
+            headers["X-API-Key"] = token
+        else:
+            headers["Authorization"] = f"Bearer {token}"
     request = urllib.request.Request(url, data=body, headers=headers)
     try:
         with urllib.request.urlopen(request, timeout=timeout) as response:
