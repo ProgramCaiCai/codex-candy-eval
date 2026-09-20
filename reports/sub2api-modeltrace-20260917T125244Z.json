@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-09-17T12:52:44.180072+00:00",
+  "requested_model": "gpt-5.6-sol",
+  "protocol": "responses",
+  "fast_mode": false,
+  "summary": {
+    "accounts": 1,
+    "completed": 0,
+    "passed": 0
+  },
+  "results": [
+    {
+      "account": "lucen_low",
+      "tested_model": "gpt-5.6-sol",
+      "fast_mode": false,
+      "passed": null,
+      "top_model": null,
+      "error": "没有可用回答：模型未返回足够的完整数字序列",
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-2-f40aae32554953",
+          "expected_count": 317,
+          "parsed_count": 0,
+          "elapsed_seconds": 30.324,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-2-f40aae32554953: Request failed for https://lucen.plus/v1/responses: The read operation timed out"
+        },
+        {
+          "challenge_id": "probe-3-ac76183589e7e7",
+          "expected_count": 324,
+          "parsed_count": 0,
+          "elapsed_seconds": 31.525,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-3-ac76183589e7e7: Request failed for https://lucen.plus/v1/responses: The read operation timed out"
+        },
+        {
+          "challenge_id": "probe-1-f71e9c21374c62",
+          "expected_count": 294,
+          "parsed_count": 0,
+          "elapsed_seconds": 180.11,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-1-f71e9c21374c62: Request failed for https://lucen.plus/v1/responses: total request timeout exceeded"
+        }
+      ],
+      "probe_errors": [
+        "probe-2-f40aae32554953: Request failed for https://lucen.plus/v1/responses: The read operation timed out",
+        "probe-3-ac76183589e7e7: Request failed for https://lucen.plus/v1/responses: The read operation timed out",
+        "probe-1-f71e9c21374c62: Request failed for https://lucen.plus/v1/responses: total request timeout exceeded"
+      ]
+    }
+  ]
+}

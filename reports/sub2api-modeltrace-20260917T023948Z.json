@@ -1,0 +1,272 @@
+{
+  "created_at": "2026-09-17T02:39:48.420843+00:00",
+  "requested_model": "gpt-5.6-sol",
+  "protocol": "responses",
+  "fast_mode": false,
+  "summary": {
+    "accounts": 5,
+    "completed": 1,
+    "passed": 0
+  },
+  "results": [
+    {
+      "account": "codexfor",
+      "tested_model": "gpt-5.6-sol",
+      "fast_mode": false,
+      "passed": false,
+      "top_model": {
+        "model": "gpt-5.6-luna",
+        "display_name": "gpt-5.6-luna",
+        "probability": 0.9956071238503181
+      },
+      "used_outputs": 1,
+      "error": null,
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 257,
+        "output_tokens": 1505,
+        "reasoning_tokens": 884
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-3-326ea7d3dc4bf0",
+          "expected_count": 313,
+          "parsed_count": 0,
+          "elapsed_seconds": 43.345,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-3-326ea7d3dc4bf0: Request failed for https://blackaicoding.com/v1/responses: The read operation timed out"
+        },
+        {
+          "challenge_id": "probe-1-c7ed4e852f4177",
+          "expected_count": 298,
+          "parsed_count": 0,
+          "elapsed_seconds": 47.442,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-1-c7ed4e852f4177: Request failed for https://blackaicoding.com/v1/responses: The read operation timed out"
+        },
+        {
+          "challenge_id": "probe-2-14c900148c668d",
+          "expected_count": 307,
+          "parsed_count": 307,
+          "elapsed_seconds": 89.358,
+          "attempts": 1,
+          "output_tokens": 1505,
+          "reasoning_tokens": 884,
+          "error": null
+        }
+      ],
+      "probe_errors": [
+        "probe-3-326ea7d3dc4bf0: Request failed for https://blackaicoding.com/v1/responses: The read operation timed out",
+        "probe-1-c7ed4e852f4177: Request failed for https://blackaicoding.com/v1/responses: The read operation timed out"
+      ]
+    },
+    {
+      "account": "hetune015",
+      "tested_model": "gpt-5.6-sol",
+      "fast_mode": false,
+      "passed": null,
+      "top_model": null,
+      "error": "没有可用回答：模型未返回足够的完整数字序列",
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-1-6aa6b8cf98783f",
+          "expected_count": 309,
+          "parsed_count": 0,
+          "elapsed_seconds": 12.741,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-1-6aa6b8cf98783f: Request failed for https://api.hetune.top/v1/responses: stream ended before response.completed"
+        },
+        {
+          "challenge_id": "probe-3-b6138f3125bd6d",
+          "expected_count": 326,
+          "parsed_count": 0,
+          "elapsed_seconds": 183.637,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-3-b6138f3125bd6d: Request failed for https://api.hetune.top/v1/responses: total request timeout exceeded"
+        },
+        {
+          "challenge_id": "probe-2-17e1d8f459b948",
+          "expected_count": 331,
+          "parsed_count": 0,
+          "elapsed_seconds": 189.728,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-2-17e1d8f459b948: Request failed for https://api.hetune.top/v1/responses: total request timeout exceeded"
+        }
+      ],
+      "probe_errors": [
+        "probe-1-6aa6b8cf98783f: Request failed for https://api.hetune.top/v1/responses: stream ended before response.completed",
+        "probe-3-b6138f3125bd6d: Request failed for https://api.hetune.top/v1/responses: total request timeout exceeded",
+        "probe-2-17e1d8f459b948: Request failed for https://api.hetune.top/v1/responses: total request timeout exceeded"
+      ]
+    },
+    {
+      "account": "hetune025",
+      "tested_model": "gpt-5.6-sol",
+      "fast_mode": false,
+      "passed": null,
+      "top_model": null,
+      "error": "没有可用回答：模型未返回足够的完整数字序列",
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-3-476271d7e4a4b3",
+          "expected_count": 295,
+          "parsed_count": 0,
+          "elapsed_seconds": 16.237,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-3-476271d7e4a4b3: Request failed for https://api.hetune.top/v1/responses: stream ended before response.completed"
+        },
+        {
+          "challenge_id": "probe-1-00e0a44e0011a3",
+          "expected_count": 324,
+          "parsed_count": 0,
+          "elapsed_seconds": 17.033,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-1-00e0a44e0011a3: Request failed for https://api.hetune.top/v1/responses: stream ended before response.completed"
+        },
+        {
+          "challenge_id": "probe-2-40ff4ed3060c93",
+          "expected_count": 304,
+          "parsed_count": 0,
+          "elapsed_seconds": 181.726,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-2-40ff4ed3060c93: Request failed for https://api.hetune.top/v1/responses: total request timeout exceeded"
+        }
+      ],
+      "probe_errors": [
+        "probe-3-476271d7e4a4b3: Request failed for https://api.hetune.top/v1/responses: stream ended before response.completed",
+        "probe-1-00e0a44e0011a3: Request failed for https://api.hetune.top/v1/responses: stream ended before response.completed",
+        "probe-2-40ff4ed3060c93: Request failed for https://api.hetune.top/v1/responses: total request timeout exceeded"
+      ]
+    },
+    {
+      "account": "lucoo015",
+      "tested_model": "gpt-5.6-sol",
+      "fast_mode": false,
+      "passed": null,
+      "top_model": null,
+      "error": "没有可用回答：模型未返回足够的完整数字序列",
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-2-8744df5bf497bf",
+          "expected_count": 311,
+          "parsed_count": 0,
+          "elapsed_seconds": 30.338,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-2-8744df5bf497bf: Request failed for https://lucoo.ai/v1/responses: The read operation timed out"
+        },
+        {
+          "challenge_id": "probe-3-c4016e1b2720b9",
+          "expected_count": 306,
+          "parsed_count": 0,
+          "elapsed_seconds": 30.345,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-3-c4016e1b2720b9: Request failed for https://lucoo.ai/v1/responses: The read operation timed out"
+        },
+        {
+          "challenge_id": "probe-1-b5d0f25bc3ebc1",
+          "expected_count": 307,
+          "parsed_count": 0,
+          "elapsed_seconds": 30.399,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-1-b5d0f25bc3ebc1: Request failed for https://lucoo.ai/v1/responses: The read operation timed out"
+        }
+      ],
+      "probe_errors": [
+        "probe-2-8744df5bf497bf: Request failed for https://lucoo.ai/v1/responses: The read operation timed out",
+        "probe-3-c4016e1b2720b9: Request failed for https://lucoo.ai/v1/responses: The read operation timed out",
+        "probe-1-b5d0f25bc3ebc1: Request failed for https://lucoo.ai/v1/responses: The read operation timed out"
+      ]
+    },
+    {
+      "account": "lucoo018",
+      "tested_model": "gpt-5.6-sol",
+      "fast_mode": false,
+      "passed": null,
+      "top_model": null,
+      "error": "没有可用回答：模型未返回足够的完整数字序列",
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-1-d3dadcf6db6c4f",
+          "expected_count": 303,
+          "parsed_count": 0,
+          "elapsed_seconds": 30.344,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-1-d3dadcf6db6c4f: Request failed for https://lucoo.ai/v1/responses: The read operation timed out"
+        },
+        {
+          "challenge_id": "probe-3-d33e4684a46f5f",
+          "expected_count": 307,
+          "parsed_count": 0,
+          "elapsed_seconds": 30.478,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-3-d33e4684a46f5f: Request failed for https://lucoo.ai/v1/responses: The read operation timed out"
+        },
+        {
+          "challenge_id": "probe-2-43d9c15db041aa",
+          "expected_count": 329,
+          "parsed_count": 0,
+          "elapsed_seconds": 180.008,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-2-43d9c15db041aa: Request failed for https://lucoo.ai/v1/responses: total request timeout exceeded"
+        }
+      ],
+      "probe_errors": [
+        "probe-1-d3dadcf6db6c4f: Request failed for https://lucoo.ai/v1/responses: The read operation timed out",
+        "probe-3-d33e4684a46f5f: Request failed for https://lucoo.ai/v1/responses: The read operation timed out",
+        "probe-2-43d9c15db041aa: Request failed for https://lucoo.ai/v1/responses: total request timeout exceeded"
+      ]
+    }
+  ]
+}

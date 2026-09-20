@@ -1,0 +1,21 @@
+{
+  "created_at": "2026-09-14T17:14:15.504316+00:00",
+  "requested_model": "gpt-5.6-sol",
+  "protocol": "responses",
+  "fast_mode": true,
+  "summary": {
+    "accounts": 1,
+    "completed": 0,
+    "passed": 0
+  },
+  "results": [
+    {
+      "account": "foxcode-codex",
+      "tested_model": "gpt-5.6-sol",
+      "fast_mode": true,
+      "passed": null,
+      "top_model": null,
+      "error": "没有可用回答：模型未返回足够的完整数字序列"
+    }
+  ]
+}

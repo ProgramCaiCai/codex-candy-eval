@@ -1,0 +1,268 @@
+{
+  "created_at": "2026-09-16T12:34:54.228612+00:00",
+  "requested_model": "gpt-5.6-sol",
+  "protocol": "responses",
+  "fast_mode": false,
+  "summary": {
+    "accounts": 5,
+    "completed": 2,
+    "passed": 2
+  },
+  "results": [
+    {
+      "account": "codexfor",
+      "tested_model": "gpt-5.6-sol",
+      "fast_mode": false,
+      "passed": false,
+      "top_model": null,
+      "error": "probe-3-60868ef114501b: 数字个数不符 313/294",
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 9233,
+        "output_tokens": 1532,
+        "reasoning_tokens": 218
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-2-8a19e25545c189",
+          "expected_count": 324,
+          "parsed_count": 0,
+          "elapsed_seconds": 39.095,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-2-8a19e25545c189: Request failed for https://blackaicoding.com/v1/responses: stream ended before response.completed"
+        },
+        {
+          "challenge_id": "probe-3-60868ef114501b",
+          "expected_count": 294,
+          "parsed_count": 313,
+          "elapsed_seconds": 59.537,
+          "attempts": 1,
+          "output_tokens": 756,
+          "reasoning_tokens": 121,
+          "error": "probe-3-60868ef114501b: 数字个数不符 313/294"
+        },
+        {
+          "challenge_id": "probe-1-d4a43baa149f4e",
+          "expected_count": 309,
+          "parsed_count": 336,
+          "elapsed_seconds": 64.002,
+          "attempts": 1,
+          "output_tokens": 776,
+          "reasoning_tokens": 97,
+          "error": "probe-1-d4a43baa149f4e: 数字个数不符 336/309"
+        }
+      ],
+      "probe_errors": [
+        "probe-2-8a19e25545c189: Request failed for https://blackaicoding.com/v1/responses: stream ended before response.completed",
+        "probe-3-60868ef114501b: 数字个数不符 313/294",
+        "probe-1-d4a43baa149f4e: 数字个数不符 336/309"
+      ]
+    },
+    {
+      "account": "hetune015",
+      "tested_model": "gpt-5.6-sol",
+      "fast_mode": false,
+      "passed": true,
+      "top_model": {
+        "model": "gpt-5.6-sol",
+        "display_name": "gpt-5.6-sol",
+        "probability": 0.6441785859734658
+      },
+      "used_outputs": 3,
+      "error": null,
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 363,
+        "output_tokens": 4933,
+        "reasoning_tokens": 3004
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-3-2fd6ae5504a305",
+          "expected_count": 322,
+          "parsed_count": 322,
+          "elapsed_seconds": 25.276,
+          "attempts": 1,
+          "output_tokens": 1716,
+          "reasoning_tokens": 1065,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-2-557fc0c27a03c3",
+          "expected_count": 300,
+          "parsed_count": 300,
+          "elapsed_seconds": 31.583,
+          "attempts": 1,
+          "output_tokens": 1367,
+          "reasoning_tokens": 760,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-1-d5dc0888209327",
+          "expected_count": 332,
+          "parsed_count": 332,
+          "elapsed_seconds": 55.271,
+          "attempts": 1,
+          "output_tokens": 1850,
+          "reasoning_tokens": 1179,
+          "error": null
+        }
+      ],
+      "probe_errors": []
+    },
+    {
+      "account": "hetune025",
+      "tested_model": "gpt-5.6-sol",
+      "fast_mode": false,
+      "passed": false,
+      "top_model": null,
+      "error": "probe-3-db4c4cb45fd3c1: 数字个数不符 328/320",
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 364,
+        "output_tokens": 3689,
+        "reasoning_tokens": 1712
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-3-db4c4cb45fd3c1",
+          "expected_count": 320,
+          "parsed_count": 328,
+          "elapsed_seconds": 21.416,
+          "attempts": 1,
+          "output_tokens": 734,
+          "reasoning_tokens": 71,
+          "error": "probe-3-db4c4cb45fd3c1: 数字个数不符 328/320"
+        },
+        {
+          "challenge_id": "probe-1-cabc9cd5328f7a",
+          "expected_count": 328,
+          "parsed_count": 328,
+          "elapsed_seconds": 27.413,
+          "attempts": 1,
+          "output_tokens": 1444,
+          "reasoning_tokens": 781,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-2-faad4fb0774adb",
+          "expected_count": 322,
+          "parsed_count": 322,
+          "elapsed_seconds": 28.456,
+          "attempts": 1,
+          "output_tokens": 1511,
+          "reasoning_tokens": 860,
+          "error": null
+        }
+      ],
+      "probe_errors": [
+        "probe-3-db4c4cb45fd3c1: 数字个数不符 328/320"
+      ]
+    },
+    {
+      "account": "lucoo015",
+      "tested_model": "gpt-5.6-sol",
+      "fast_mode": false,
+      "passed": null,
+      "top_model": null,
+      "error": "没有可用回答：模型未返回足够的完整数字序列",
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-3-84b3726dfb22f5",
+          "expected_count": 302,
+          "parsed_count": 0,
+          "elapsed_seconds": 30.619,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-3-84b3726dfb22f5: Request failed for https://lucoo.ai/v1/responses: The read operation timed out"
+        },
+        {
+          "challenge_id": "probe-2-71e39329902bc0",
+          "expected_count": 298,
+          "parsed_count": 0,
+          "elapsed_seconds": 30.89,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-2-71e39329902bc0: Request failed for https://lucoo.ai/v1/responses: The read operation timed out"
+        },
+        {
+          "challenge_id": "probe-1-8bd04cab10388a",
+          "expected_count": 326,
+          "parsed_count": 0,
+          "elapsed_seconds": 31.026,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-1-8bd04cab10388a: Request failed for https://lucoo.ai/v1/responses: The read operation timed out"
+        }
+      ],
+      "probe_errors": [
+        "probe-3-84b3726dfb22f5: Request failed for https://lucoo.ai/v1/responses: The read operation timed out",
+        "probe-2-71e39329902bc0: Request failed for https://lucoo.ai/v1/responses: The read operation timed out",
+        "probe-1-8bd04cab10388a: Request failed for https://lucoo.ai/v1/responses: The read operation timed out"
+      ]
+    },
+    {
+      "account": "lucoo018",
+      "tested_model": "gpt-5.6-sol",
+      "fast_mode": false,
+      "passed": true,
+      "top_model": {
+        "model": "gpt-5.6-sol",
+        "display_name": "gpt-5.6-sol",
+        "probability": 0.5549924145042142
+      },
+      "used_outputs": 3,
+      "error": null,
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 13503,
+        "output_tokens": 4663,
+        "reasoning_tokens": 2718
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-1-790cc74f717f1a",
+          "expected_count": 323,
+          "parsed_count": 323,
+          "elapsed_seconds": 30.037,
+          "attempts": 1,
+          "output_tokens": 1516,
+          "reasoning_tokens": 863,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-3-22a0e1602a30dc",
+          "expected_count": 322,
+          "parsed_count": 322,
+          "elapsed_seconds": 30.719,
+          "attempts": 1,
+          "output_tokens": 1520,
+          "reasoning_tokens": 869,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-2-e3cf45d27b655a",
+          "expected_count": 317,
+          "parsed_count": 317,
+          "elapsed_seconds": 32.327,
+          "attempts": 1,
+          "output_tokens": 1627,
+          "reasoning_tokens": 986,
+          "error": null
+        }
+      ],
+      "probe_errors": []
+    }
+  ]
+}

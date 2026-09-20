@@ -22,14 +22,21 @@ class IncompleteStreamError(RuntimeError):
 
 
 def stream_anthropic_request(
-    url: str, payload: dict[str, Any], token: str, *, timeout: float
+    url: str, payload: dict[str, Any], token: str, *, timeout: float,
+    headers: dict[str, str] | None = None,
+    max_retries: int = MAX_RETRIES,
+    total_timeout: float | None = None,
 ) -> ResponseResult:
     last_error: RuntimeError | None = None
     last_cause: BaseException | None = None
-    for retry in range(MAX_RETRIES + 1):
+    deadline = time.monotonic() + total_timeout if total_timeout is not None else None
+    for retry in range(max_retries + 1):
         try:
             return replace(
-                _request_once(url, payload, token, timeout=timeout), attempts=retry + 1
+                _request_once(
+                    url, payload, token, timeout=timeout, headers=headers, deadline=deadline,
+                ),
+                attempts=retry + 1,
             )
         except urllib.error.HTTPError as exc:
             last_error = _http_error(exc.code, exc.read(64 * 1024).decode("utf-8", "replace"))
@@ -40,7 +47,7 @@ def stream_anthropic_request(
             last_error = RuntimeError(f"Request failed for {_safe_origin(url)}: {_reason(exc)}")
             last_cause = exc
             retryable = True
-        if not retryable or retry == MAX_RETRIES:
+        if not retryable or retry == max_retries:
             attempts = retry + 1
             suffix = f" (after {attempts} attempts)" if attempts > 1 else ""
             raise RequestError(f"{last_error}{suffix}", attempts) from last_cause
@@ -49,7 +56,9 @@ def stream_anthropic_request(
 
 
 def _request_once(
-    url: str, payload: dict[str, Any], token: str, *, timeout: float
+    url: str, payload: dict[str, Any], token: str, *, timeout: float,
+    headers: dict[str, str] | None = None,
+    deadline: float | None = None,
 ) -> ResponseResult:
     request = urllib.request.Request(
         url,
@@ -60,17 +69,21 @@ def _request_once(
             "User-Agent": CODEX_USER_AGENT,
             "x-api-key": token,
             "anthropic-version": "2023-06-01",
+            **(headers or {}),
         },
     )
-    with urllib.request.urlopen(request, timeout=timeout) as response:
-        return _parse_stream(response)
+    read_timeout = min(timeout, 30.0) if deadline is not None else timeout
+    with urllib.request.urlopen(request, timeout=read_timeout) as response:
+        return _parse_stream(response, deadline)
 
 
-def _parse_stream(response: Any) -> ResponseResult:
+def _parse_stream(response: Any, deadline: float | None = None) -> ResponseResult:
     texts: list[str] = []
     usage: dict[str, Any] = {}
     stopped = False
     for event in _sse_events(response):
+        if deadline is not None and time.monotonic() >= deadline:
+            raise TimeoutError("total request timeout exceeded")
         event_type = event.get("type")
         if event_type == "message_start":
             message = event.get("message")

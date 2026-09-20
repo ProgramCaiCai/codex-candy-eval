@@ -241,6 +241,7 @@ class ResponseClientTest(unittest.TestCase):
                 "model",
                 tests=2,
                 workers=2,
+                case="A",
             )
 
         self.assertEqual([1, 2], [result["run"] for result in results])

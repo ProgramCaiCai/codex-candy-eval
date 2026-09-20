@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-09-18T07:32:44.515976+00:00",
+  "requested_model": "gpt-6-astra",
+  "protocol": "responses",
+  "fast_mode": false,
+  "summary": {
+    "accounts": 1,
+    "completed": 0,
+    "passed": 0
+  },
+  "results": [
+    {
+      "account": "lucoo015",
+      "tested_model": "gpt-6-astra",
+      "fast_mode": false,
+      "passed": null,
+      "top_model": null,
+      "error": "没有可用回答：模型未返回足够的完整数字序列",
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-3-56b01573db38a2",
+          "expected_count": 333,
+          "parsed_count": 0,
+          "elapsed_seconds": 45.333,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-3-56b01573db38a2: Request failed for https://lucoo.ai/v1/responses: The read operation timed out"
+        },
+        {
+          "challenge_id": "probe-1-7615a9f7bba72a",
+          "expected_count": 324,
+          "parsed_count": 0,
+          "elapsed_seconds": 180.038,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-1-7615a9f7bba72a: Request failed for https://lucoo.ai/v1/responses: total request timeout exceeded"
+        },
+        {
+          "challenge_id": "probe-2-0de3adcb6c504c",
+          "expected_count": 319,
+          "parsed_count": 0,
+          "elapsed_seconds": 181.035,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-2-0de3adcb6c504c: Request failed for https://lucoo.ai/v1/responses: total request timeout exceeded"
+        }
+      ],
+      "probe_errors": [
+        "probe-3-56b01573db38a2: Request failed for https://lucoo.ai/v1/responses: The read operation timed out",
+        "probe-1-7615a9f7bba72a: Request failed for https://lucoo.ai/v1/responses: total request timeout exceeded",
+        "probe-2-0de3adcb6c504c: Request failed for https://lucoo.ai/v1/responses: total request timeout exceeded"
+      ]
+    }
+  ]
+}

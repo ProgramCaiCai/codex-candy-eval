@@ -1,0 +1,68 @@
+{
+  "created_at": "2026-09-14T17:11:31.632873+00:00",
+  "requested_model": "gpt-5.6-sol",
+  "protocol": "responses",
+  "fast_mode": false,
+  "summary": {
+    "accounts": 1,
+    "completed": 1,
+    "passed": 0
+  },
+  "results": [
+    {
+      "account": "foxcode-codex",
+      "tested_model": "gpt-5.6-sol",
+      "fast_mode": false,
+      "passed": false,
+      "top_model": {
+        "model": "gpt-5.6-luna",
+        "display_name": "gpt-5.6-luna",
+        "probability": 0.9974414298070255
+      },
+      "used_outputs": 1,
+      "error": null,
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 794,
+        "output_tokens": 740,
+        "reasoning_tokens": 0
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-1-3e26c67f34f444",
+          "expected_count": 328,
+          "parsed_count": 338,
+          "elapsed_seconds": 35.112,
+          "attempts": 1,
+          "output_tokens": 740,
+          "reasoning_tokens": 0,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-3-65854dc7328dd2",
+          "expected_count": 303,
+          "parsed_count": 0,
+          "elapsed_seconds": 121.662,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-3-65854dc7328dd2: Request failed for https://dm-fox.rjj.cc/codex/v1/responses: stream ended before response.completed"
+        },
+        {
+          "challenge_id": "probe-2-09d43647052ee4",
+          "expected_count": 304,
+          "parsed_count": 0,
+          "elapsed_seconds": 386.647,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-2-09d43647052ee4: Request failed for https://dm-fox.rjj.cc/codex/v1/responses: stream ended before response.completed"
+        }
+      ],
+      "probe_errors": [
+        "probe-3-65854dc7328dd2: Request failed for https://dm-fox.rjj.cc/codex/v1/responses: stream ended before response.completed",
+        "probe-2-09d43647052ee4: Request failed for https://dm-fox.rjj.cc/codex/v1/responses: stream ended before response.completed"
+      ]
+    }
+  ]
+}

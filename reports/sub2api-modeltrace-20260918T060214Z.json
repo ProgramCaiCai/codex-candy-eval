@@ -1,0 +1,67 @@
+{
+  "created_at": "2026-09-18T06:02:14.938996+00:00",
+  "requested_model": "gpt-6-astra",
+  "protocol": "responses",
+  "fast_mode": false,
+  "summary": {
+    "accounts": 1,
+    "completed": 1,
+    "passed": 1
+  },
+  "results": [
+    {
+      "account": "lucoo015",
+      "tested_model": "gpt-6-astra",
+      "fast_mode": false,
+      "passed": true,
+      "top_model": {
+        "model": "gpt-6-astra",
+        "display_name": "gpt-6-astra",
+        "probability": 0.9983872688290961
+      },
+      "used_outputs": 2,
+      "error": null,
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 8690,
+        "output_tokens": 2890,
+        "reasoning_tokens": 0
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-1-477ac0eb0d42b9",
+          "expected_count": 307,
+          "parsed_count": 0,
+          "elapsed_seconds": 36.636,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-1-477ac0eb0d42b9: Request failed for https://lucoo.ai/v1/responses: The read operation timed out"
+        },
+        {
+          "challenge_id": "probe-2-55b7faf748faa8",
+          "expected_count": 311,
+          "parsed_count": 311,
+          "elapsed_seconds": 49.013,
+          "attempts": 1,
+          "output_tokens": 1428,
+          "reasoning_tokens": null,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-3-378c4461536222",
+          "expected_count": 326,
+          "parsed_count": 326,
+          "elapsed_seconds": 52.629,
+          "attempts": 1,
+          "output_tokens": 1462,
+          "reasoning_tokens": null,
+          "error": null
+        }
+      ],
+      "probe_errors": [
+        "probe-1-477ac0eb0d42b9: Request failed for https://lucoo.ai/v1/responses: The read operation timed out"
+      ]
+    }
+  ]
+}

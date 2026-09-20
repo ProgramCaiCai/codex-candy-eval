@@ -47,13 +47,24 @@ def test_response(
     prompt: str = CANDY_PROMPT,
     protocol: str = DEFAULT_PROTOCOL,
     system_prompt: str | None = None,
+    inject_header: bool = False,
+    max_tokens: int | None = None,
+    max_retries: int | None = None,
+    total_timeout: float | None = None,
 ) -> ResponseResult:
     selected = resolve_protocol(protocol)
     endpoint = normalize_endpoint(url, selected)
+    options = {"timeout": timeout}
+    if max_retries is not None:
+        options["max_retries"] = max_retries
+    if total_timeout is not None:
+        options["total_timeout"] = total_timeout
+    if inject_header:
+        options["headers"] = {"x-codex-routing-hint": f"model={model};tier=default"}
     if selected == "anthropic":
         payload = {
             "model": model,
-            "max_tokens": 16384,
+            "max_tokens": max_tokens if max_tokens is not None else 16384,
             "messages": [{"role": "user", "content": prompt}],
             "thinking": {"type": "adaptive"},
             "output_config": {"effort": reasoning_effort},
@@ -61,17 +72,17 @@ def test_response(
         }
         if system_prompt is not None:
             payload["system"] = system_prompt
-        return stream_anthropic_request(endpoint, payload, key, timeout=timeout)
+        return stream_anthropic_request(endpoint, payload, key, **options)
     payload = {
-        "model": model,
-        "input": prompt,
+        "model": model, "input": prompt,
         "reasoning": {"effort": reasoning_effort},
-        "store": False,
-        "stream": True,
+        "store": False, "stream": True,
     }
+    if max_tokens is not None:
+        payload["max_output_tokens"] = max_tokens
     if system_prompt is not None:
         payload["instructions"] = system_prompt
-    return stream_response_request(endpoint, payload, key, timeout=timeout)
+    return stream_response_request(endpoint, payload, key, **options)
 
 
 def evaluate_once(
@@ -85,6 +96,7 @@ def evaluate_once(
     prompt: str = CANDY_PROMPT,
     protocol: str = DEFAULT_PROTOCOL,
     system_prompt: str | None = None,
+    inject_header: bool = False,
 ) -> dict[str, object]:
     started = time.perf_counter()
     try:
@@ -97,6 +109,7 @@ def evaluate_once(
             prompt=prompt,
             protocol=protocol,
             system_prompt=system_prompt,
+            inject_header=inject_header,
         )
         return _result_dict(run, result, time.perf_counter() - started)
     except Exception as exc:
@@ -115,15 +128,13 @@ def run_tests(
     prompt: str = CANDY_PROMPT,
     protocol: str = DEFAULT_PROTOCOL,
     system_prompt: str | None = None,
+    inject_header: bool = False,
 ) -> list[dict[str, object]]:
     arguments = (url, key)
     options = {
-        "model": model,
-        "reasoning_effort": reasoning_effort,
-        "timeout": timeout,
-        "prompt": prompt,
-        "protocol": protocol,
-        "system_prompt": system_prompt,
+        "model": model, "reasoning_effort": reasoning_effort,
+        "timeout": timeout, "prompt": prompt, "protocol": protocol,
+        "system_prompt": system_prompt, "inject_header": inject_header,
     }
 
     results: list[dict[str, object]] = []
@@ -163,6 +174,8 @@ def parse_args() -> argparse.Namespace:
     add_direct_arguments(parser)
     parser.add_argument("--inject-prompt", action="store_true",
                         help="注入同目录 system_prompt.txt 作为 system prompt")
+    parser.add_argument("--inject-header", action="store_true",
+                        help="注入 x-codex-routing-hint: model=<实际模型名>;tier=default")
     return parser.parse_args()
 
 
@@ -181,19 +194,18 @@ def main() -> int:
             prompt=args.prompt,
             protocol=args.protocol,
             system_prompt=system_prompt,
+            inject_header=args.inject_header,
         )
     except Exception as exc:
         print(json.dumps({"error": str(exc)}, ensure_ascii=False))
         return 1
     graded = [item["correct"] for item in results if item["correct"] is not None]
     payload = {
-        "url": args.url,
-        "model": args.model,
+        "url": args.url, "model": args.model,
         "reasoning_effort": args.reasoning_effort,
         "protocol": args.protocol,
         "inject_prompt": args.inject_prompt,
-        "stream": True,
-        "tests": args.tests,
+        "stream": True, "tests": args.tests,
         "graded": len(graded),
         "correct": sum(value is True for value in graded),
         "results": results,
@@ -232,9 +244,7 @@ def _error_dict(run: int, exc: Exception, elapsed: float) -> dict[str, object]:
         "run": run,
         "text": None,
         "correct": None,
-        "input_tokens": None,
-        "output_tokens": None,
-        "reasoning_tokens": None,
+        "input_tokens": None, "output_tokens": None, "reasoning_tokens": None,
         "attempts": getattr(exc, "attempts", 1),
         "elapsed_seconds": round(elapsed, 3),
         "error": str(exc),

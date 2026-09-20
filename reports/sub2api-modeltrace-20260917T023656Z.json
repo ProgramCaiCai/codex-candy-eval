@@ -1,0 +1,268 @@
+{
+  "created_at": "2026-09-17T02:36:56.683974+00:00",
+  "requested_model": "gpt-6-astra",
+  "protocol": "responses",
+  "fast_mode": false,
+  "summary": {
+    "accounts": 5,
+    "completed": 0,
+    "passed": 0
+  },
+  "results": [
+    {
+      "account": "codexfor",
+      "tested_model": "gpt-6-astra",
+      "fast_mode": false,
+      "passed": null,
+      "top_model": null,
+      "error": "没有可用回答：模型未返回足够的完整数字序列",
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-2-15d75fd6259fdd",
+          "expected_count": 311,
+          "parsed_count": 0,
+          "elapsed_seconds": 4.385,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-2-15d75fd6259fdd: HTTP 502: <!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>powerofai.edu.kg | 502: Bad gateway</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatib"
+        },
+        {
+          "challenge_id": "probe-1-ee1b89227adc04",
+          "expected_count": 304,
+          "parsed_count": 0,
+          "elapsed_seconds": 4.604,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-1-ee1b89227adc04: HTTP 502: <!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>powerofai.edu.kg | 502: Bad gateway</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatib"
+        },
+        {
+          "challenge_id": "probe-3-4557b0283110ed",
+          "expected_count": 292,
+          "parsed_count": 0,
+          "elapsed_seconds": 5.294,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-3-4557b0283110ed: HTTP 502: <!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>powerofai.edu.kg | 502: Bad gateway</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatib"
+        }
+      ],
+      "probe_errors": [
+        "probe-2-15d75fd6259fdd: HTTP 502: <!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>powerofai.edu.kg | 502: Bad gateway</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatib",
+        "probe-1-ee1b89227adc04: HTTP 502: <!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>powerofai.edu.kg | 502: Bad gateway</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatib",
+        "probe-3-4557b0283110ed: HTTP 502: <!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>powerofai.edu.kg | 502: Bad gateway</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatib"
+      ]
+    },
+    {
+      "account": "hetune015",
+      "tested_model": "gpt-6-astra",
+      "fast_mode": false,
+      "passed": null,
+      "top_model": null,
+      "error": "没有可用回答：模型未返回足够的完整数字序列",
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-1-39c356d6b13b52",
+          "expected_count": 298,
+          "parsed_count": 0,
+          "elapsed_seconds": 108.478,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-1-39c356d6b13b52: Request failed for https://api.hetune.top/v1/responses: stream ended before response.completed"
+        },
+        {
+          "challenge_id": "probe-2-f0023750ebe65e",
+          "expected_count": 315,
+          "parsed_count": 0,
+          "elapsed_seconds": 108.487,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-2-f0023750ebe65e: Request failed for https://api.hetune.top/v1/responses: stream ended before response.completed"
+        },
+        {
+          "challenge_id": "probe-3-a8458ecda986a1",
+          "expected_count": 331,
+          "parsed_count": 0,
+          "elapsed_seconds": 111.245,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-3-a8458ecda986a1: Request failed for https://api.hetune.top/v1/responses: stream ended before response.completed"
+        }
+      ],
+      "probe_errors": [
+        "probe-1-39c356d6b13b52: Request failed for https://api.hetune.top/v1/responses: stream ended before response.completed",
+        "probe-2-f0023750ebe65e: Request failed for https://api.hetune.top/v1/responses: stream ended before response.completed",
+        "probe-3-a8458ecda986a1: Request failed for https://api.hetune.top/v1/responses: stream ended before response.completed"
+      ]
+    },
+    {
+      "account": "hetune025",
+      "tested_model": "gpt-6-astra",
+      "fast_mode": false,
+      "passed": null,
+      "top_model": null,
+      "error": "没有可用回答：模型未返回足够的完整数字序列",
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-3-a77a71c730a467",
+          "expected_count": 321,
+          "parsed_count": 0,
+          "elapsed_seconds": 109.761,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-3-a77a71c730a467: Request failed for https://api.hetune.top/v1/responses: stream ended before response.completed"
+        },
+        {
+          "challenge_id": "probe-1-aae0ed23b6bcd1",
+          "expected_count": 320,
+          "parsed_count": 0,
+          "elapsed_seconds": 111.304,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-1-aae0ed23b6bcd1: Request failed for https://api.hetune.top/v1/responses: stream ended before response.completed"
+        },
+        {
+          "challenge_id": "probe-2-e6667715481595",
+          "expected_count": 327,
+          "parsed_count": 0,
+          "elapsed_seconds": 111.368,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-2-e6667715481595: Request failed for https://api.hetune.top/v1/responses: stream ended before response.completed"
+        }
+      ],
+      "probe_errors": [
+        "probe-3-a77a71c730a467: Request failed for https://api.hetune.top/v1/responses: stream ended before response.completed",
+        "probe-1-aae0ed23b6bcd1: Request failed for https://api.hetune.top/v1/responses: stream ended before response.completed",
+        "probe-2-e6667715481595: Request failed for https://api.hetune.top/v1/responses: stream ended before response.completed"
+      ]
+    },
+    {
+      "account": "lucoo015",
+      "tested_model": "gpt-6-astra",
+      "fast_mode": false,
+      "passed": false,
+      "top_model": null,
+      "error": "probe-2-4c63b6eba7d8fc: 数字个数不符 343/332",
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 4345,
+        "output_tokens": 791,
+        "reasoning_tokens": 98
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-1-c724ab0c3ccb05",
+          "expected_count": 303,
+          "parsed_count": 0,
+          "elapsed_seconds": 30.537,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-1-c724ab0c3ccb05: Request failed for https://lucoo.ai/v1/responses: The read operation timed out"
+        },
+        {
+          "challenge_id": "probe-3-66b4d5ecdc5097",
+          "expected_count": 323,
+          "parsed_count": 0,
+          "elapsed_seconds": 30.552,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-3-66b4d5ecdc5097: Request failed for https://lucoo.ai/v1/responses: The read operation timed out"
+        },
+        {
+          "challenge_id": "probe-2-4c63b6eba7d8fc",
+          "expected_count": 332,
+          "parsed_count": 343,
+          "elapsed_seconds": 64.654,
+          "attempts": 1,
+          "output_tokens": 791,
+          "reasoning_tokens": 98,
+          "error": "probe-2-4c63b6eba7d8fc: 数字个数不符 343/332"
+        }
+      ],
+      "probe_errors": [
+        "probe-1-c724ab0c3ccb05: Request failed for https://lucoo.ai/v1/responses: The read operation timed out",
+        "probe-3-66b4d5ecdc5097: Request failed for https://lucoo.ai/v1/responses: The read operation timed out",
+        "probe-2-4c63b6eba7d8fc: 数字个数不符 343/332"
+      ]
+    },
+    {
+      "account": "lucoo018",
+      "tested_model": "gpt-6-astra",
+      "fast_mode": false,
+      "passed": false,
+      "top_model": null,
+      "error": "probe-2-a31c171588efc0: 数字个数不符 320/305",
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 4345,
+        "output_tokens": 736,
+        "reasoning_tokens": 89
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-1-fc41faa75cb1ae",
+          "expected_count": 320,
+          "parsed_count": 0,
+          "elapsed_seconds": 30.551,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-1-fc41faa75cb1ae: Request failed for https://lucoo.ai/v1/responses: The read operation timed out"
+        },
+        {
+          "challenge_id": "probe-3-1c83041a05c78a",
+          "expected_count": 326,
+          "parsed_count": 0,
+          "elapsed_seconds": 30.598,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-3-1c83041a05c78a: Request failed for https://lucoo.ai/v1/responses: The read operation timed out"
+        },
+        {
+          "challenge_id": "probe-2-a31c171588efc0",
+          "expected_count": 305,
+          "parsed_count": 320,
+          "elapsed_seconds": 53.784,
+          "attempts": 1,
+          "output_tokens": 736,
+          "reasoning_tokens": 89,
+          "error": "probe-2-a31c171588efc0: 数字个数不符 320/305"
+        }
+      ],
+      "probe_errors": [
+        "probe-1-fc41faa75cb1ae: Request failed for https://lucoo.ai/v1/responses: The read operation timed out",
+        "probe-3-1c83041a05c78a: Request failed for https://lucoo.ai/v1/responses: The read operation timed out",
+        "probe-2-a31c171588efc0: 数字个数不符 320/305"
+      ]
+    }
+  ]
+}

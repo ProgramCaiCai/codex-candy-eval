@@ -1,0 +1,83 @@
+{
+  "created_at": "2026-09-11T03:15:24.600904+00:00",
+  "requested_model": "dafeiyang",
+  "reasoning_effort": "xhigh",
+  "protocol": "responses",
+  "inject_prompt": false,
+  "stream": true,
+  "accounts": 1,
+  "graded": 0,
+  "correct": 0,
+  "results": [
+    {
+      "account": "lucoo018",
+      "model": "dafeiyang",
+      "run": 1,
+      "text": null,
+      "correct": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "attempts": 4,
+      "elapsed_seconds": 10.65,
+      "error": "HTTP 503: No available channel for model dafeiyang under group pro (distributor) (request id: 202609110315243492684538268d9d6rtQQSZBK) (after 4 attempts)",
+      "tokens_per_second": null
+    },
+    {
+      "account": "lucoo018",
+      "model": "dafeiyang",
+      "run": 2,
+      "text": null,
+      "correct": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "attempts": 4,
+      "elapsed_seconds": 10.372,
+      "error": "HTTP 503: No available channel for model dafeiyang under group pro (distributor) (request id: 202609110315240687806818268d9d62i4CoN50) (after 4 attempts)",
+      "tokens_per_second": null
+    },
+    {
+      "account": "lucoo018",
+      "model": "dafeiyang",
+      "run": 3,
+      "text": null,
+      "correct": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "attempts": 4,
+      "elapsed_seconds": 10.692,
+      "error": "HTTP 503: No available channel for model dafeiyang under group pro (distributor) (request id: 202609110315244295602818268d9d6ea4mj6VG) (after 4 attempts)",
+      "tokens_per_second": null
+    },
+    {
+      "account": "lucoo018",
+      "model": "dafeiyang",
+      "run": 4,
+      "text": null,
+      "correct": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "attempts": 4,
+      "elapsed_seconds": 10.65,
+      "error": "HTTP 503: No available channel for model dafeiyang under group pro (distributor) (request id: 202609110315243889597098268d9d6ncatyiOn) (after 4 attempts)",
+      "tokens_per_second": null
+    },
+    {
+      "account": "lucoo018",
+      "model": "dafeiyang",
+      "run": 5,
+      "text": null,
+      "correct": null,
+      "input_tokens": null,
+      "output_tokens": null,
+      "reasoning_tokens": null,
+      "attempts": 4,
+      "elapsed_seconds": 10.715,
+      "error": "HTTP 503: No available channel for model dafeiyang under group pro (distributor) (request id: 202609110315244178477978268d9d6DTSnRBn9) (after 4 attempts)",
+      "tokens_per_second": null
+    }
+  ]
+}

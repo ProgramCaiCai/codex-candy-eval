@@ -1,0 +1,326 @@
+{
+  "created_at": "2026-09-14T15:14:51.856161+00:00",
+  "requested_model": "gpt-5.6-sol",
+  "protocol": "responses",
+  "summary": {
+    "accounts": 9,
+    "completed": 9,
+    "passed": 2
+  },
+  "results": [
+    {
+      "account": "codexfor",
+      "tested_model": "gpt-5.6-sol",
+      "passed": false,
+      "top_models": [
+        {
+          "rank": 1,
+          "model": "gpt-5.6-luna",
+          "display_name": "gpt-5.6-luna",
+          "probability": 0.9997996310835108
+        },
+        {
+          "rank": 2,
+          "model": "gpt-5.5",
+          "display_name": "gpt-5.5",
+          "probability": 0.000173366502663907
+        },
+        {
+          "rank": 3,
+          "model": "gpt-5.6-sol",
+          "display_name": "gpt-5.6-sol",
+          "probability": 1.5520841472677278e-05
+        }
+      ],
+      "used_outputs": 3,
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 13828,
+        "output_tokens": 5492,
+        "reasoning_tokens": 3601
+      },
+      "probe_errors": [],
+      "error": null
+    },
+    {
+      "account": "dafeiyang",
+      "tested_model": "gpt-5.6-sol",
+      "passed": false,
+      "top_models": [
+        {
+          "rank": 1,
+          "model": "gpt-5.6-luna",
+          "display_name": "gpt-5.6-luna",
+          "probability": 0.9921735290783045
+        },
+        {
+          "rank": 2,
+          "model": "gpt-5.6-terra",
+          "display_name": "gpt-5.6-terra",
+          "probability": 0.0036726439288500778
+        },
+        {
+          "rank": 3,
+          "model": "gpt-5.6-sol",
+          "display_name": "gpt-5.6-sol",
+          "probability": 0.0025972101924725778
+        }
+      ],
+      "used_outputs": 3,
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 13481,
+        "output_tokens": 5816,
+        "reasoning_tokens": 3674
+      },
+      "probe_errors": [],
+      "error": null
+    },
+    {
+      "account": "foxcode-codex",
+      "tested_model": "gpt-5.6-sol",
+      "passed": true,
+      "top_models": [
+        {
+          "rank": 1,
+          "model": "gpt-5.6-sol",
+          "display_name": "gpt-5.6-sol",
+          "probability": 0.9980932529421769
+        },
+        {
+          "rank": 2,
+          "model": "gpt-5.5",
+          "display_name": "gpt-5.5",
+          "probability": 0.0016331119734227459
+        },
+        {
+          "rank": 3,
+          "model": "gpt-5.6-terra",
+          "display_name": "gpt-5.6-terra",
+          "probability": 0.00012756972526496
+        }
+      ],
+      "used_outputs": 3,
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 342,
+        "output_tokens": 8311,
+        "reasoning_tokens": 6115
+      },
+      "probe_errors": [],
+      "error": null
+    },
+    {
+      "account": "hetune010",
+      "tested_model": "gpt-5.6-sol",
+      "passed": false,
+      "top_models": [
+        {
+          "rank": 1,
+          "model": "gpt-5.6-luna",
+          "display_name": "gpt-5.6-luna",
+          "probability": 0.999925754360893
+        },
+        {
+          "rank": 2,
+          "model": "gpt-5.5",
+          "display_name": "gpt-5.5",
+          "probability": 4.70896072071969e-05
+        },
+        {
+          "rank": 3,
+          "model": "gpt-5.6-sol",
+          "display_name": "gpt-5.6-sol",
+          "probability": 2.1802696493770426e-05
+        }
+      ],
+      "used_outputs": 3,
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 10211,
+        "output_tokens": 5897,
+        "reasoning_tokens": 2787
+      },
+      "probe_errors": [],
+      "error": null
+    },
+    {
+      "account": "hetune015",
+      "tested_model": "gpt-5.6-sol",
+      "passed": true,
+      "top_models": [
+        {
+          "rank": 1,
+          "model": "gpt-5.6-sol",
+          "display_name": "gpt-5.6-sol",
+          "probability": 0.9903446464843358
+        },
+        {
+          "rank": 2,
+          "model": "gpt-5.5",
+          "display_name": "gpt-5.5",
+          "probability": 0.009027234456092454
+        },
+        {
+          "rank": 3,
+          "model": "gpt-5.4",
+          "display_name": "gpt-5.4",
+          "probability": 0.0005516837480767061
+        }
+      ],
+      "used_outputs": 3,
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 345,
+        "output_tokens": 7374,
+        "reasoning_tokens": 5515
+      },
+      "probe_errors": [],
+      "error": null
+    },
+    {
+      "account": "hetune025",
+      "tested_model": "gpt-5.6-sol",
+      "passed": false,
+      "top_models": [
+        {
+          "rank": 1,
+          "model": "gpt-5.6-luna",
+          "display_name": "gpt-5.6-luna",
+          "probability": 0.9783346196839848
+        },
+        {
+          "rank": 2,
+          "model": "gpt-5.5",
+          "display_name": "gpt-5.5",
+          "probability": 0.01564553339238998
+        },
+        {
+          "rank": 3,
+          "model": "gpt-5.6-terra",
+          "display_name": "gpt-5.6-terra",
+          "probability": 0.0053761571674539954
+        }
+      ],
+      "used_outputs": 1,
+      "attempted": 6,
+      "usage": {
+        "input_tokens": 1231,
+        "output_tokens": 959,
+        "reasoning_tokens": 0
+      },
+      "probe_errors": [
+        "probe-1-d860d182335585: HTTP 400: status_code=400, 请联系管理员处理！ (request id: 202609141457339909683768268d9d67eUvYWTz) (after 2 attempts)",
+        "probe-3-982c42f3e44552: HTTP 400: status_code=400, 请联系管理员处理！ (request id: 202609141457338309841898268d9d6d0gE8nVM) (after 2 attempts)",
+        "probe-4-2f8eaec8aa31c7: HTTP 400: status_code=400, 请联系管理员处理！ (request id: 202609141500420280494688268d9d6b0L3MSqj) (after 2 attempts)",
+        "probe-5-764c2ae189313f: HTTP 400: status_code=400, 请联系管理员处理！ (request id: 202609141500438665175698268d9d6DMJcc7U3) (after 2 attempts)",
+        "probe-6-2e81a37966a9cd: HTTP 400: status_code=400, 请联系管理员处理！ (request id: 202609141500510959922758268d9d6PDofdKis) (after 2 attempts)"
+      ],
+      "error": null
+    },
+    {
+      "account": "lucoo015",
+      "tested_model": "gpt-5.6-sol",
+      "passed": false,
+      "top_models": [
+        {
+          "rank": 1,
+          "model": "gpt-5.6-luna",
+          "display_name": "gpt-5.6-luna",
+          "probability": 0.9999337865239919
+        },
+        {
+          "rank": 2,
+          "model": "gpt-5.5",
+          "display_name": "gpt-5.5",
+          "probability": 3.884088432464935e-05
+        },
+        {
+          "rank": 3,
+          "model": "gpt-5.6-sol",
+          "display_name": "gpt-5.6-sol",
+          "probability": 1.5076776693772338e-05
+        }
+      ],
+      "used_outputs": 3,
+      "attempted": 4,
+      "usage": {
+        "input_tokens": 13483,
+        "output_tokens": 6009,
+        "reasoning_tokens": 3779
+      },
+      "probe_errors": [
+        "probe-3-692957774946a8: HTTP 524: <!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n\n<title>lucoo.ai | 524: A timeout occurred</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatibl (after 4 attempts)"
+      ],
+      "error": null
+    },
+    {
+      "account": "lucoo018",
+      "tested_model": "gpt-5.6-sol",
+      "passed": false,
+      "top_models": [
+        {
+          "rank": 1,
+          "model": "gpt-5.6-luna",
+          "display_name": "gpt-5.6-luna",
+          "probability": 0.9999133112184848
+        },
+        {
+          "rank": 2,
+          "model": "gpt-5.6-sol",
+          "display_name": "gpt-5.6-sol",
+          "probability": 4.626323891785976e-05
+        },
+        {
+          "rank": 3,
+          "model": "gpt-5.5",
+          "display_name": "gpt-5.5",
+          "probability": 2.8863218786004794e-05
+        }
+      ],
+      "used_outputs": 3,
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 13481,
+        "output_tokens": 7175,
+        "reasoning_tokens": 4666
+      },
+      "probe_errors": [],
+      "error": null
+    },
+    {
+      "account": "lucoo025",
+      "tested_model": "gpt-5.6-sol",
+      "passed": false,
+      "top_models": [
+        {
+          "rank": 1,
+          "model": "gpt-5.5",
+          "display_name": "gpt-5.5",
+          "probability": 0.6632488521369249
+        },
+        {
+          "rank": 2,
+          "model": "gpt-5.6-sol",
+          "display_name": "gpt-5.6-sol",
+          "probability": 0.3356419203240795
+        },
+        {
+          "rank": 3,
+          "model": "gpt-5.6-luna",
+          "display_name": "gpt-5.6-luna",
+          "probability": 0.0010951015685217527
+        }
+      ],
+      "used_outputs": 3,
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 13486,
+        "output_tokens": 5519,
+        "reasoning_tokens": 3570
+      },
+      "probe_errors": [],
+      "error": null
+    }
+  ]
+}

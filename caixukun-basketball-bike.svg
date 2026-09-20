@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="800" viewBox="0 0 1000 800" role="img" aria-labelledby="title desc">
+  <title id="title">蔡徐坤一边骑车一边打篮球 · 卡通创作</title>
+  <desc id="desc">银灰色中分发型的卡通人物穿着黑色背带裤，骑着绿色自行车，右手同时拍着篮球，身后是明亮的篮球场。</desc>
+  <defs>
+    <pattern id="net" width="18" height="18" patternUnits="userSpaceOnUse">
+      <path d="M0 0 18 18M18 0 0 18" fill="none" stroke="#a6bbc1" stroke-width="2"/>
+    </pattern>
+    <style>
+      .outline{stroke:#243640;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+      .detail{fill:none;stroke:#243640;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+      .motion{fill:none;stroke:#539b96;stroke-width:5;stroke-linecap:round}
+      text{font-family:'Noto Sans CJK SC','Microsoft YaHei',sans-serif}
+    </style>
+  </defs>
+
+  <path fill="#eef8f7" d="M0 0h1000v800H0z"/>
+  <circle cx="847" cy="130" r="60" fill="#ffdc71"/>
+  <path d="M60 254h139m-103 19h147M683 91h71" stroke="#fff" stroke-width="14" stroke-linecap="round"/>
+  <text x="65" y="95" font-size="44" font-weight="900" fill="#243640">骑得稳，球也稳。</text>
+  <text x="68" y="134" font-size="17" fill="#56817f" letter-spacing="3">蔡徐坤 · 双线操作 / CARTOON EDITION</text>
+
+  <!-- 球场与远处的篮架 -->
+  <path d="M0 566h1000v234H0z" fill="#c8e7df"/>
+  <path d="M0 711h1000M79 800l189-234m-31 234 124-234M706 800l-77-234" fill="none" stroke="#f7fffa" stroke-width="5"/>
+  <ellipse cx="519" cy="711" rx="376" ry="37" fill="#9fcfc1" opacity=".5"/>
+  <path d="M896 565V296" stroke="#94b6b7" stroke-width="12"/>
+  <rect x="813" y="211" width="133" height="99" rx="5" fill="#fff" stroke="#94b6b7" stroke-width="6"/>
+  <path d="M848 252h61v45h-61z" fill="none" stroke="#e39a83" stroke-width="5"/>
+  <path d="m845 306 12 66h43l13-66" fill="url(#net)" stroke="#94b6b7" stroke-width="3"/>
+  <path d="M837 306h83" stroke="#eb8368" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- 自行车：辐条、轮胎与车架 -->
+  <g class="outline" fill="#f7fcfa">
+    <circle cx="281" cy="611" r="112"/>
+    <circle cx="649" cy="611" r="112"/>
+  </g>
+  <g stroke="#b2c7c9" stroke-width="3" fill="none">
+    <path d="M281 508v206m-103-103h206m-176-73 146 146m-146 0 146-146M649 508v206m-103-103h206m-176-73 146 146m-146 0 146-146"/>
+    <circle cx="281" cy="611" r="98"/><circle cx="649" cy="611" r="98"/>
+  </g>
+  <path d="m281 611 109-166 85 166H281l279-166-85 166m85-166 89 166M390 445l-16-45m186 45-22-80h43" fill="none" stroke="#243640" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="m281 611 109-166 85 166H281l279-166-85 166m85-166 89 166" fill="none" stroke="#30ad94" stroke-width="9" stroke-linejoin="round"/>
+  <path d="M346 401h58M545 365h41" stroke="#243640" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="475" cy="611" r="22" fill="#e7efeb" class="outline"/>
+  <path d="m475 611 33 28h26m-59-28-28-31h-23" class="detail"/>
+  <circle cx="281" cy="611" r="9" fill="#243640"/><circle cx="649" cy="611" r="9" fill="#243640"/>
+
+  <!-- 远侧的腿 -->
+  <path d="m433 389 79 86-65 83" fill="none" stroke="#243640" stroke-width="46" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m442 542-20 27c-4 8 0 15 12 16l46-1c11-1 13-12 4-17l-21-12" fill="#f9fbf6" class="outline"/>
+
+  <!-- 身体、背带与握车把的手 -->
+  <path d="m421 269-42 25-16 82 53 35 68-24-15-87z" fill="#b7bdc8" class="outline"/>
+  <path d="m392 285-12 87 37 30 62-18-25-99-13-5 9 66-48 7 6-70z" fill="#292f3a"/>
+  <path d="m399 304-4 39m53-37 7 31" stroke="#f0f1eb" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="394" cy="351" r="4" fill="#ffdb79"/><circle cx="457" cy="346" r="4" fill="#ffdb79"/>
+  <path d="m471 305 44 35 47 15" fill="none" stroke="#243640" stroke-width="31" stroke-linecap="round"/>
+  <path d="m473 305 42 35 47 15" fill="none" stroke="#b7bdc8" stroke-width="20" stroke-linecap="round"/>
+  <path d="m561 345 19 8c12 8 5 23-7 18l-19-10" fill="#f0be9d" class="outline"/>
+
+  <!-- 近侧腿与踏板 -->
+  <path d="m408 390-30 69 74 65 39 92" fill="none" stroke="#303642" stroke-width="49" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m397 420-13 34 84 71 30 72" fill="none" stroke="#58606b" stroke-width="5" stroke-linecap="round"/>
+  <path d="m479 609 26-6 12 17 31 11c12 6 10 18-3 19h-53c-12-1-17-7-16-16z" fill="#f9fbf6" class="outline"/>
+  <path d="M483 639h64m-39-18 12 2" class="detail"/>
+
+  <!-- 颈部与卡通面部 -->
+  <path d="m419 246 1 29c8 13 26 11 33-1l-5-36" fill="#f0be9d" class="outline"/>
+  <path d="m394 192 3 39c2 31 27 49 52 43 27-7 43-31 38-61l-9-34z" fill="#f5c9ab" class="outline"/>
+  <path d="M399 219c-22-14-26 15-7 25l11 1" fill="#f5c9ab" class="outline"/>
+  <path d="M392 221c-15-18-15-56 8-75 21-19 48-17 66-7 29 2 41 30 32 57l-12 24-7-36c-19-3-33-14-41-25-7 25-25 33-40 35z" fill="#a9adb9" class="outline"/>
+  <path d="M437 153c-16-12-35 2-39 22m45-21c20-3 37 10 43 24m-51-19-18 25" fill="none" stroke="#dce0e6" stroke-width="6" stroke-linecap="round"/>
+  <path d="m414 216 14-3m27-2 13 2" class="detail"/>
+  <path d="M424 225v5m35-6v5" stroke="#243640" stroke-width="5" stroke-linecap="round"/>
+  <path d="m443 227-2 13h6m-19 11c9 7 19 5 26-2" class="detail"/>
+  <path d="m406 240 9 2m50-2 8-3" stroke="#e6a08e" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- 伸出的运球手与篮球 -->
+  <path d="m474 300 69-21 76 53" fill="none" stroke="#243640" stroke-width="33" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m474 300 69-21 76 53" fill="none" stroke="#b7bdc8" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m612 320 24 8 22 20c6 6 0 14-7 10l-17-12 9 14c4 7-3 12-9 7l-20-20-10-6" fill="#f5c9ab" class="outline"/>
+  <g transform="translate(714 459) rotate(-18)">
+    <circle r="66" fill="#f3954e" class="outline"/>
+    <path d="M-63-17c33 20 88 20 126 0M0-66v132M-43-48C5-32 5 33-43 49m86-98C-5-32-5 33 43 49" class="detail"/>
+    <path d="M-42-29c4-9 10-15 17-19" fill="none" stroke="#ffd09a" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <path d="m687 361 5 17m29-25 2 17m35 186 4 20m-34-15 2 25" fill="none" stroke="#e1a35e" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="739" cy="640" rx="48" ry="10" fill="#76b8a7" opacity=".6"/>
+  <path d="m722 616 12-14m19 15 9-16" class="motion"/>
+  <path d="M128 439h110m-139 30h108m-76 31h65M84 596h41" class="motion"/>
+  <path d="m796 410 9-17m7 36 18-5" stroke="#e5b449" stroke-width="5" stroke-linecap="round"/>
+  <text x="66" y="759" font-size="15" fill="#47736d">两轮向前，篮球在线。</text>
+  <text x="934" y="759" text-anchor="end" font-size="13" fill="#47736d">虚构场景 · 卡通演绎</text>
+</svg>

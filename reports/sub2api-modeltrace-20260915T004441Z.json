@@ -1,0 +1,381 @@
+{
+  "created_at": "2026-09-15T00:44:41.033386+00:00",
+  "requested_model": "gpt-5.6-terra",
+  "protocol": "responses",
+  "fast_mode": false,
+  "summary": {
+    "accounts": 7,
+    "completed": 5,
+    "passed": 2
+  },
+  "results": [
+    {
+      "account": "codexfor",
+      "tested_model": "gpt-5.6-terra",
+      "fast_mode": false,
+      "passed": false,
+      "top_model": {
+        "model": "gpt-5.6-luna",
+        "display_name": "gpt-5.6-luna",
+        "probability": 0.999921819545266
+      },
+      "used_outputs": 3,
+      "error": null,
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 13507,
+        "output_tokens": 9579,
+        "reasoning_tokens": 7712
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-2-38b172f5fcc969",
+          "expected_count": 307,
+          "parsed_count": 307,
+          "elapsed_seconds": 50.42,
+          "attempts": 1,
+          "output_tokens": 2652,
+          "reasoning_tokens": 2031,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-1-cc64e86a5d69d1",
+          "expected_count": 317,
+          "parsed_count": 317,
+          "elapsed_seconds": 62.394,
+          "attempts": 1,
+          "output_tokens": 3308,
+          "reasoning_tokens": 2667,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-3-3e3ac239e6471a",
+          "expected_count": 299,
+          "parsed_count": 299,
+          "elapsed_seconds": 74.092,
+          "attempts": 1,
+          "output_tokens": 3619,
+          "reasoning_tokens": 3014,
+          "error": null
+        }
+      ],
+      "probe_errors": []
+    },
+    {
+      "account": "dafeiyang",
+      "tested_model": "gpt-5.6-terra",
+      "fast_mode": false,
+      "passed": false,
+      "top_model": {
+        "model": "gpt-5.6-luna",
+        "display_name": "gpt-5.6-luna",
+        "probability": 0.9980273176260074
+      },
+      "used_outputs": 1,
+      "error": null,
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 4502,
+        "output_tokens": 1612,
+        "reasoning_tokens": 971
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-2-23493ce197e7fa",
+          "expected_count": 296,
+          "parsed_count": 0,
+          "elapsed_seconds": 30.53,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-2-23493ce197e7fa: Request failed for https://dafeiyangtoken.shop/v1/responses: The read operation timed out"
+        },
+        {
+          "challenge_id": "probe-1-5b30d419f57a3b",
+          "expected_count": 317,
+          "parsed_count": 317,
+          "elapsed_seconds": 32.704,
+          "attempts": 1,
+          "output_tokens": 1612,
+          "reasoning_tokens": 971,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-3-680531e0cfaa6d",
+          "expected_count": 325,
+          "parsed_count": 0,
+          "elapsed_seconds": 180.0,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-3-680531e0cfaa6d: Request failed for https://dafeiyangtoken.shop/v1/responses: total request timeout exceeded"
+        }
+      ],
+      "probe_errors": [
+        "probe-2-23493ce197e7fa: Request failed for https://dafeiyangtoken.shop/v1/responses: The read operation timed out",
+        "probe-3-680531e0cfaa6d: Request failed for https://dafeiyangtoken.shop/v1/responses: total request timeout exceeded"
+      ]
+    },
+    {
+      "account": "foxcode-codex",
+      "tested_model": "gpt-5.6-terra",
+      "fast_mode": false,
+      "passed": true,
+      "top_model": {
+        "model": "gpt-5.6-terra",
+        "display_name": "gpt-5.6-terra",
+        "probability": 0.9590629228495842
+      },
+      "used_outputs": 3,
+      "error": null,
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 364,
+        "output_tokens": 3772,
+        "reasoning_tokens": 1871
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-1-00c21a5696525a",
+          "expected_count": 301,
+          "parsed_count": 311,
+          "elapsed_seconds": 16.236,
+          "attempts": 1,
+          "output_tokens": 790,
+          "reasoning_tokens": 159,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-3-ae4a49b6e9fecf",
+          "expected_count": 312,
+          "parsed_count": 312,
+          "elapsed_seconds": 29.461,
+          "attempts": 1,
+          "output_tokens": 1479,
+          "reasoning_tokens": 848,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-2-4d8b700e99c505",
+          "expected_count": 315,
+          "parsed_count": 316,
+          "elapsed_seconds": 30.614,
+          "attempts": 1,
+          "output_tokens": 1503,
+          "reasoning_tokens": 864,
+          "error": null
+        }
+      ],
+      "probe_errors": []
+    },
+    {
+      "account": "hetune015",
+      "tested_model": "gpt-5.6-terra",
+      "fast_mode": false,
+      "passed": false,
+      "top_model": {
+        "model": "gpt-5.5",
+        "display_name": "gpt-5.5",
+        "probability": 0.5741002728585016
+      },
+      "used_outputs": 3,
+      "error": null,
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 365,
+        "output_tokens": 5164,
+        "reasoning_tokens": 3269
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-3-03da6c3634041a",
+          "expected_count": 304,
+          "parsed_count": 304,
+          "elapsed_seconds": 19.717,
+          "attempts": 1,
+          "output_tokens": 1499,
+          "reasoning_tokens": 884,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-2-9e9a62d9e53560",
+          "expected_count": 305,
+          "parsed_count": 305,
+          "elapsed_seconds": 20.317,
+          "attempts": 1,
+          "output_tokens": 1624,
+          "reasoning_tokens": 1007,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-1-3e191261cba3d4",
+          "expected_count": 328,
+          "parsed_count": 328,
+          "elapsed_seconds": 22.303,
+          "attempts": 1,
+          "output_tokens": 2041,
+          "reasoning_tokens": 1378,
+          "error": null
+        }
+      ],
+      "probe_errors": []
+    },
+    {
+      "account": "hetune025",
+      "tested_model": "gpt-5.6-terra",
+      "fast_mode": false,
+      "passed": null,
+      "top_model": null,
+      "error": "没有可用回答：模型未返回足够的完整数字序列",
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-3-eb28f3b1b6ee7e",
+          "expected_count": 330,
+          "parsed_count": 0,
+          "elapsed_seconds": 0.704,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-3-eb28f3b1b6ee7e: HTTP 503: status_code=503, 请联系管理员处理！ (request id: 202609150041412903722108268d9d6kz9qCLD2)"
+        },
+        {
+          "challenge_id": "probe-1-47fc34d458dccc",
+          "expected_count": 332,
+          "parsed_count": 0,
+          "elapsed_seconds": 0.705,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-1-47fc34d458dccc: HTTP 503: status_code=503, 请联系管理员处理！ (request id: 202609150041412959177418268d9d66LWi4z9n)"
+        },
+        {
+          "challenge_id": "probe-2-82c569b82d0837",
+          "expected_count": 296,
+          "parsed_count": 0,
+          "elapsed_seconds": 1.807,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-2-82c569b82d0837: HTTP 503: status_code=503, 请联系管理员处理！ (request id: 202609150041424859899198268d9d6AWnfWi3W)"
+        }
+      ],
+      "probe_errors": [
+        "probe-3-eb28f3b1b6ee7e: HTTP 503: status_code=503, 请联系管理员处理！ (request id: 202609150041412903722108268d9d6kz9qCLD2)",
+        "probe-1-47fc34d458dccc: HTTP 503: status_code=503, 请联系管理员处理！ (request id: 202609150041412959177418268d9d66LWi4z9n)",
+        "probe-2-82c569b82d0837: HTTP 503: status_code=503, 请联系管理员处理！ (request id: 202609150041424859899198268d9d6AWnfWi3W)"
+      ]
+    },
+    {
+      "account": "lucoo015",
+      "tested_model": "gpt-5.6-terra",
+      "fast_mode": false,
+      "passed": null,
+      "top_model": null,
+      "error": "没有可用回答：模型未返回足够的完整数字序列",
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-1-6f505bb7bc5b90",
+          "expected_count": 294,
+          "parsed_count": 0,
+          "elapsed_seconds": 180.027,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-1-6f505bb7bc5b90: Request failed for https://lucoo.ai/v1/responses: total request timeout exceeded"
+        },
+        {
+          "challenge_id": "probe-3-a51e8a11919105",
+          "expected_count": 302,
+          "parsed_count": 0,
+          "elapsed_seconds": 180.078,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-3-a51e8a11919105: Request failed for https://lucoo.ai/v1/responses: total request timeout exceeded"
+        },
+        {
+          "challenge_id": "probe-2-79094c7653e474",
+          "expected_count": 331,
+          "parsed_count": 0,
+          "elapsed_seconds": 180.213,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-2-79094c7653e474: Request failed for https://lucoo.ai/v1/responses: total request timeout exceeded"
+        }
+      ],
+      "probe_errors": [
+        "probe-1-6f505bb7bc5b90: Request failed for https://lucoo.ai/v1/responses: total request timeout exceeded",
+        "probe-3-a51e8a11919105: Request failed for https://lucoo.ai/v1/responses: total request timeout exceeded",
+        "probe-2-79094c7653e474: Request failed for https://lucoo.ai/v1/responses: total request timeout exceeded"
+      ]
+    },
+    {
+      "account": "lucoo018",
+      "tested_model": "gpt-5.6-terra",
+      "fast_mode": false,
+      "passed": true,
+      "top_model": {
+        "model": "gpt-5.6-terra",
+        "display_name": "gpt-5.6-terra",
+        "probability": 0.9988103720737671
+      },
+      "used_outputs": 1,
+      "error": null,
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 4502,
+        "output_tokens": 1040,
+        "reasoning_tokens": 151
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-1-bc856151574b0b",
+          "expected_count": 303,
+          "parsed_count": 440,
+          "elapsed_seconds": 46.192,
+          "attempts": 1,
+          "output_tokens": 1040,
+          "reasoning_tokens": 151,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-2-2f251ba9b820dc",
+          "expected_count": 301,
+          "parsed_count": 0,
+          "elapsed_seconds": 87.021,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-2-2f251ba9b820dc: Request failed for https://lucoo.ai/v1/responses: The read operation timed out"
+        },
+        {
+          "challenge_id": "probe-3-0cee62c89641fe",
+          "expected_count": 308,
+          "parsed_count": 0,
+          "elapsed_seconds": 180.015,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-3-0cee62c89641fe: Request failed for https://lucoo.ai/v1/responses: total request timeout exceeded"
+        }
+      ],
+      "probe_errors": [
+        "probe-2-2f251ba9b820dc: Request failed for https://lucoo.ai/v1/responses: The read operation timed out",
+        "probe-3-0cee62c89641fe: Request failed for https://lucoo.ai/v1/responses: total request timeout exceeded"
+      ]
+    }
+  ]
+}

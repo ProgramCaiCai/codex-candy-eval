@@ -1,5 +1,6 @@
 __pycache__/
 *.pyc
+*.tar.gz
 .venv/
 .DS_Store
 .env

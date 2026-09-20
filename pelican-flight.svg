@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200" role="img" aria-labelledby="title desc">
+  <title id="title">云端奇旅：29！</title>
+  <desc id="desc">孙悟空驾驶大型客机。鹈鹕在机翼上骑自行车，展开的双翼托着北极熊，秦始皇骑在熊背上用电动螺丝刀打螺丝。鹈鹕喊出糖果问题的答案：29。</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#86cbd9"/><stop offset="1" stop-color="#e6f3e9"/></linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="0.2" y2="1"><stop stop-color="#fffdf0"/><stop offset=".45" stop-color="#d4e7e4"/><stop offset="1" stop-color="#77a4ab"/></linearGradient>
+    <linearGradient id="wing" x2=".5" y2="1"><stop stop-color="#f7f9e9"/><stop offset="1" stop-color="#98c5c8"/></linearGradient>
+    <linearGradient id="fur" x2=".2" y2="1"><stop stop-color="#fffef0"/><stop offset=".7" stop-color="#f0f1dc"/><stop offset="1" stop-color="#b7d2c9"/></linearGradient>
+    <linearGradient id="beak" x2="0" y2="1"><stop stop-color="#ffd265"/><stop offset="1" stop-color="#ea8752"/></linearGradient>
+    <linearGradient id="robe" x2="1" y2="1"><stop stop-color="#284c4b"/><stop offset="1" stop-color="#102e33"/></linearGradient>
+    <radialGradient id="engine"><stop stop-color="#162e3b"/><stop offset=".7" stop-color="#3f6973"/><stop offset="1" stop-color="#a7c5c6"/></radialGradient>
+    <pattern id="rivet" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="1.6" fill="#557e86"/></pattern>
+    <g id="cloud" fill="#fffef1"><path d="M0 55C-12 28 18 5 46 22C58-14 108-7 117 26C144 6 180 27 177 50C210 45 228 64 228 75H-22C-21 64-12 55 0 55Z"/></g>
+    <g id="spokes" stroke="#739392" stroke-width="2"><path d="M0-85V85M-85 0H85M-60-60L60 60M-60 60L60-60M-33-79L33 79M-79-33L79 33M-79 33L79-33M-33 79L33-79"/></g>
+    <g id="wheel"><circle r="94" fill="#233e43"/><circle r="82" fill="#d5e8dc" stroke="#f5e8bd" stroke-width="5"/><use href="#spokes"/><circle r="10" fill="#edba5e" stroke="#2b474a" stroke-width="4"/><path d="M-67-61A91 91 0 0 1 56-72" fill="none" stroke="#799c9b" stroke-width="3"/></g>
+    <g id="screw" stroke="#365655" stroke-width="2"><path d="M0 0V18M-4 5L4 2M-4 10L4 7M-4 15L4 12"/><ellipse rx="7" ry="3" fill="#c4d3c7"/><path d="M-3 0H3"/></g>
+    <g id="bead" fill="#e9bd65" stroke="#6e623e" stroke-width="1"><circle r="3.5"/></g>
+  </defs>
+  <rect width="1600" height="1200" fill="url(#sky)"/>
+  <circle cx="1328" cy="187" r="105" fill="#fff1b6" opacity=".85"/>
+  <g opacity=".65"><use href="#cloud" transform="translate(56 160) scale(1.8)"/><use href="#cloud" transform="translate(1210 334) scale(1.6)"/><use href="#cloud" transform="translate(407 484) scale(.8)"/><use href="#cloud" transform="translate(1030 963) scale(2.5)"/><use href="#cloud" transform="translate(-44 969) scale(2)"/></g>
+  <g fill="none" stroke="#f3fcf4" stroke-width="3" opacity=".7"><path d="M82 361H330M121 380H259M1270 527H1512M1340 545H1466M26 706H197M1382 770H1550"/></g>
+  <g font-family="'Noto Sans CJK SC','Microsoft YaHei',sans-serif" fill="#27595d">
+    <text x="78" y="87" font-size="17" letter-spacing="4">THE IMPOSSIBLE SKY RIDE</text>
+    <text x="74" y="140" font-size="42" font-weight="700">云端奇旅</text>
+    <path d="M78 165H206" stroke="#38747b" stroke-width="3"/>
+    <text x="80" y="192" font-size="15">筋斗航空 · 九霄航线</text>
+  </g>
+  <!-- 大型客机：远翼、尾翼、机身与近翼。 -->
+  <g stroke="#31565d" stroke-width="3" stroke-linejoin="round">
+    <path d="M954 847L1231 529L1302 519L1160 879Z" fill="#9fc9c9"/>
+    <path d="M1201 812L1437 622L1493 629L1413 869Z" fill="#e2eee1"/>
+    <path d="M1361 795L1406 562Q1410 547 1425 552L1469 573L1477 834" fill="#cd6049"/>
+    <path d="M1408 621L1464 647M1398 674L1467 700" stroke="#f7d681" stroke-width="15"/>
+    <path d="M191 818Q325 746 561 768L1407 802Q1501 807 1524 844Q1542 875 1489 898L477 1025Q288 1041 166 964Q69 901 191 818Z" fill="url(#metal)"/>
+    <path d="M131 901Q254 950 495 931L1475 841L1526 851Q1530 868 1506 884L477 997Q248 1018 150 942Z" fill="#cf6650" stroke="none"/>
+    <path d="M164 930Q319 980 505 959L1509 862" fill="none" stroke="#f4d994" stroke-width="8"/>
+    <path d="M165 958Q286 1002 429 992" fill="none" stroke="#e3f0e5" stroke-width="3"/>
+    <path d="M524 788L549 916M1196 802L1204 899M1346 811L1352 883" fill="none" stroke="#7d9e9f" stroke-width="2"/>
+    <path d="M183 834Q217 801 286 793L407 792L431 853L199 875Z" fill="#244b58"/>
+    <path d="M197 835L226 817L236 856L201 861Z" fill="#8bd4d4" stroke="none"/>
+    <path d="M294 797L300 861M355 795L370 856" fill="none" stroke="#bdcfc0" stroke-width="7"/>
+    <g fill="#3c6973" stroke="#d7e9df" stroke-width="5">
+      <rect x="473" y="808" width="27" height="33" rx="10"/><rect x="525" y="808" width="27" height="33" rx="10"/>
+      <rect x="577" y="810" width="27" height="33" rx="10"/><rect x="629" y="813" width="27" height="33" rx="10"/>
+      <rect x="681" y="815" width="27" height="33" rx="10"/><rect x="733" y="817" width="27" height="33" rx="10"/>
+      <rect x="785" y="819" width="27" height="33" rx="10"/><rect x="837" y="821" width="27" height="33" rx="10"/>
+      <rect x="1219" y="826" width="24" height="28" rx="9"/><rect x="1265" y="829" width="24" height="28" rx="9"/><rect x="1311" y="830" width="24" height="28" rx="9"/>
+    </g>
+    <path d="M653 929L825 992L874 1082Q835 1141 735 1117L662 1052Z" fill="#8bb3b8"/>
+    <path d="M657 1008Q721 978 809 1026L855 1066Q811 1121 730 1111L668 1083Z" fill="url(#metal)"/>
+    <ellipse cx="682" cy="1054" rx="50" ry="59" transform="rotate(-24 682 1054)" fill="url(#engine)" stroke="#edf0d8" stroke-width="10"/>
+    <g transform="translate(682 1054) rotate(-24)" stroke="#92b5b6" stroke-width="3"><path d="M0-45V45M-35 0H35M-26-32L26 32M-26 32L26-32M-14-42L14 42M-33-17L33 17M-33 17L33-17M-14 42L14-42"/><ellipse rx="12" ry="16" fill="#263e48"/></g>
+    <path d="M583 883L1058 802L1530 969Q1555 980 1533 1001L1435 1051L728 941Z" fill="url(#wing)"/>
+    <path d="M696 900L1091 841L1489 980L1421 1015Z" fill="#deeadc" stroke="#7b9d9f" stroke-width="2"/>
+    <path d="M829 944L1150 891L1393 991M1081 885L1110 980M1226 942L1237 1001" fill="none" stroke="#789ba0" stroke-width="2"/>
+    <path d="M746 934L1433 1040" stroke="#f8f5d9" stroke-width="4"/>
+    <path d="M1435 1051L1533 1001L1558 913L1539 902L1489 980" fill="#c85f49"/>
+    <path d="M1010 938L1278 979" stroke="#b8c7b7" stroke-width="2" stroke-dasharray="5 13"/>
+    <path d="M913 858L1087 831" stroke="#cc7355" stroke-width="3" stroke-dasharray="14 8"/>
+  </g>
+  <!-- 孙悟空的金箍、猴脸、红围巾与驾驶操纵杆。 -->
+  <g stroke="#354a48" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M311 849Q302 824 313 811L342 807Q367 820 363 850" fill="#e9b653"/>
+    <path d="M318 816L339 826L354 813" fill="#cf5141"/>
+    <path d="M347 819Q384 808 390 825L377 830L395 838Q365 842 345 826" fill="#cf5141"/>
+    <circle cx="315" cy="790" r="12" fill="#ae713e"/><circle cx="349" cy="788" r="12" fill="#ae713e"/>
+    <path d="M309 784L307 771L318 775L325 761L333 772L345 766L350 781Q359 811 332 818Q308 814 309 784Z" fill="#b77d44"/>
+    <path d="M316 790Q322 778 331 787Q341 776 348 790L347 801Q333 816 319 804Z" fill="#f3cf89"/>
+    <path d="M308 783Q329 776 351 781" fill="none" stroke="#f6d764" stroke-width="6"/>
+    <path d="M328 780Q322 775 325 771Q332 767 335 775" fill="none" stroke="#f6d764" stroke-width="3"/>
+    <path d="M319 792L325 793M338 792L344 790M328 803Q334 807 340 801" fill="none"/>
+    <path d="M315 831L292 838L279 831M350 834L333 844L309 838" fill="none" stroke="#eec57c" stroke-width="8"/>
+    <path d="M282 846V826M272 824L282 831L292 823" fill="none" stroke="#172e35" stroke-width="5"/>
+    <path d="M250 859L423 848" stroke="#e0e7d1" stroke-width="7"/>
+    <path d="M379 761L393 846" stroke="#d9ae4a" stroke-width="7"/><path d="M381 773L391 833" stroke="#a93d35" stroke-width="5"/>
+  </g>
+  <text x="462" y="899" fill="#fff2c9" font-family="sans-serif" font-size="23" font-weight="700" transform="rotate(-5 462 899)">筋 斗 航 空</text>
+  <!-- 自行车稳定落在近侧机翼上。 -->
+  <ellipse cx="941" cy="915" rx="256" ry="24" fill="#426d70" opacity=".19"/>
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <use href="#wheel" transform="translate(755 824)"/><use href="#wheel" transform="translate(1115 824)"/>
+    <g fill="none" stroke="#284b4e" stroke-width="13"><path d="M755 824L837 681L944 824ZM837 681L1055 687L944 824M1036 649L1115 824"/></g>
+    <g fill="none" stroke="#d45142" stroke-width="7"><path d="M755 824L837 681L944 824ZM837 681L1055 687L944 824M1036 649L1115 824"/></g>
+    <path d="M837 681L828 652M1036 649L1026 620L1063 608Q1090 604 1088 623L1074 637" fill="none" stroke="#38595c" stroke-width="7"/>
+    <path d="M803 651Q827 642 858 650L857 658L804 660Z" fill="#3c4b43" stroke="#284b4e" stroke-width="3"/>
+    <path d="M944 808L755 810Q738 824 755 838L944 840" fill="none" stroke="#657d73" stroke-width="3"/>
+    <circle cx="944" cy="824" r="23" fill="#e4bf6a" stroke="#355656" stroke-width="4"/>
+    <path d="M922 800L964 848M954 850H980M905 798H928" fill="none" stroke="#34575a" stroke-width="6"/>
+    <path d="M678 765Q735 707 804 751M1045 753Q1114 700 1187 764" fill="none" stroke="#f3d387" stroke-width="5"/>
+  </g>
+  <!-- 鹈鹕双翼从身体向左右展开，羽尖承托熊的四肢。 -->
+  <g stroke="#395956" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M871 574Q731 537 663 483Q614 437 533 433L453 417Q455 441 505 461L449 450Q453 473 516 490L471 485Q483 510 544 522L507 524Q523 547 581 551Q683 605 835 625Z" fill="url(#fur)"/>
+    <path d="M952 570Q1051 524 1100 484Q1140 445 1219 435L1317 411Q1312 442 1257 460L1317 447Q1308 474 1243 489L1284 485Q1270 512 1215 524L1250 524Q1225 549 1179 549Q1082 604 958 621Z" fill="url(#fur)"/>
+    <g fill="none" stroke="#91afa4" stroke-width="2"><path d="M505 461Q636 485 741 559M516 490Q635 507 730 571M544 522Q637 527 713 582M1257 460Q1142 482 1034 558M1243 489Q1145 504 1052 570M1215 524Q1125 539 1060 582"/></g>
+    <path d="M820 579Q828 552 867 539L952 534Q1007 562 984 621Q970 664 923 687Q872 708 830 673L782 679L804 655L779 657L810 627Z" fill="url(#fur)"/>
+    <path d="M833 592Q871 606 886 650Q916 675 949 650" fill="none" stroke="#9bb5a8"/>
+    <path d="M885 686L875 727L920 781L912 796L938 801L947 790L905 722L913 689" fill="#e8a74d"/>
+    <path d="M939 674L962 717L987 756L977 770L1004 774L1012 759L984 706L964 664" fill="#f3b653"/>
+    <path d="M916 796L937 802M981 769L1001 775" fill="none"/>
+    <path d="M951 587Q1019 535 1000 459Q985 411 1011 382Q1034 356 1060 384Q1082 410 1056 440Q1039 459 1054 492Q1071 553 1004 610" fill="url(#fur)"/>
+    <path d="M1020 375L1017 361L1029 367L1037 354L1043 369" fill="#fffcec"/>
+    <path d="M1051 407Q1115 407 1212 442Q1126 469 1063 442Q1050 435 1051 407Z" fill="url(#beak)"/>
+    <path d="M1058 405L1228 437L1212 444L1054 421Z" fill="#f4ca62"/>
+    <path d="M1064 431Q1123 453 1179 443" fill="none" stroke="#c7794f" stroke-width="2"/>
+    <circle cx="1046" cy="396" r="10" fill="#f7e9a7"/><circle cx="1049" cy="397" r="4.5" fill="#223f40"/><circle cx="1051" cy="394" r="1.5" fill="white"/>
+    <path d="M1034 381Q1045 375 1055 382" fill="none"/>
+    <path d="M1003 493Q1034 512 1053 497L1053 516Q1029 532 1007 513Z" fill="#ce5b46"/>
+    <path d="M1016 517Q1066 548 1106 526L1092 550L1111 560Q1051 571 1016 529" fill="#ce5b46"/>
+  </g>
+  <!-- 北极熊：厚毛、圆耳、宽脚掌与熊鞍。 -->
+  <g stroke="#3c5650" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M659 358Q621 344 624 322Q626 308 643 310L672 331" fill="url(#fur)"/>
+    <path d="M652 348Q681 292 764 300L952 305Q1011 312 1034 355L1004 422L718 426L663 405Z" fill="url(#fur)"/>
+    <path d="M685 383Q679 411 650 442Q631 445 607 439L597 451Q591 470 621 475L685 475Q705 460 726 408" fill="url(#fur)"/>
+    <path d="M739 399L745 444L723 448Q705 466 729 478L781 479Q798 470 791 440L793 408" fill="url(#fur)"/>
+    <path d="M938 399L963 442L949 454Q943 474 966 477L1015 475Q1025 467 1017 448L1004 403" fill="#d3dfd0"/>
+    <path d="M981 393L1045 433L1054 451L1080 451Q1101 462 1084 476L1032 478Q1012 471 1000 456L956 419" fill="url(#fur)"/>
+    <path d="M985 338Q1001 304 1031 306Q1068 308 1083 336L1097 369L1141 383Q1154 396 1140 411L1088 424Q1063 447 1023 423L989 399" fill="url(#fur)"/>
+    <path d="M1012 317Q995 290 1015 281Q1036 274 1043 307" fill="url(#fur)"/>
+    <path d="M1018 301Q1010 287 1022 290L1030 303" fill="#afbeb0" stroke="none"/>
+    <path d="M1060 318Q1060 298 1075 304Q1088 310 1080 333" fill="url(#fur)"/>
+    <path d="M1125 381Q1143 377 1150 388L1141 399L1126 394Z" fill="#2d4341"/>
+    <circle cx="1071" cy="355" r="4.5" fill="#2a413e" stroke="none"/><path d="M1059 345L1074 342M1140 401Q1119 415 1107 403" fill="none"/>
+    <g fill="none" stroke="#99b1a1" stroke-width="2"><path d="M695 326L687 344L699 339M817 389L829 395L837 388M909 333L918 341L929 335M1008 374L1015 382L1022 377M677 379L686 386M1060 417L1069 423"/><path d="M611 462V472M622 463V474M635 464V475M736 465V477M748 465V478M760 465V478M1058 464V476M1070 464V475"/></g>
+    <path d="M753 307Q823 282 901 308L917 380Q845 411 753 377Z" fill="#b84637"/>
+    <path d="M766 310Q828 293 889 313L902 371Q837 391 768 368Z" fill="none" stroke="#e7bc61" stroke-width="4"/>
+    <path d="M793 306L803 385M872 305L887 385" stroke="#e7bc61" stroke-width="3"/>
+    <path d="M822 354Q840 324 859 352Q843 378 828 354L853 345" fill="none" stroke="#e7bc61" stroke-width="3"/>
+  </g>
+  <!-- 秦始皇骑熊：冕旒、玄衣纁裳、金纹，手持电动螺丝刀。 -->
+  <g stroke="#35463f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M794 213Q816 200 845 211L873 257L880 318L817 337L767 307Z" fill="url(#robe)"/>
+    <path d="M785 299Q825 287 853 311L837 350L808 386L777 374L794 340L776 333Z" fill="#284a47"/>
+    <path d="M780 367L807 380L802 394Q774 402 756 388Q754 379 780 367Z" fill="#1c3433"/>
+    <path d="M852 299L892 322L909 351L887 361L870 339L830 326" fill="#203c3b"/>
+    <path d="M887 351L908 347L919 366Q906 380 884 368Z" fill="#172e2e"/>
+    <path d="M807 212L823 239L840 212M823 239L815 293M784 299Q823 318 870 302" fill="none" stroke="#dcad58" stroke-width="5"/>
+    <path d="M780 251Q765 267 771 284L815 310L829 288L803 269L814 249" fill="url(#robe)"/>
+    <path d="M820 284L839 293L831 310L812 302Z" fill="#e4b95c"/>
+    <path d="M833 294L851 295L858 302L851 311L833 306" fill="#e6b788"/>
+    <path d="M843 231Q863 221 877 242L905 267L891 289L857 271L844 253" fill="url(#robe)"/>
+    <path d="M891 258L906 269L894 287L881 278Z" fill="#d9ad58"/>
+    <path d="M902 265Q918 260 925 270L920 286L902 284L896 278Z" fill="#efc399"/>
+    <path d="M803 190L802 213L820 228L838 209L835 188" fill="#d8a777"/>
+    <ellipse cx="797" cy="176" rx="7" ry="12" fill="#edc79a"/><ellipse cx="841" cy="176" rx="7" ry="12" fill="#edc79a"/>
+    <path d="M798 145Q819 132 841 150L839 185Q833 207 817 207Q800 201 797 180Z" fill="#efc99b"/>
+    <path d="M799 185L810 196L815 188L822 197L839 180L834 206L820 224L807 211Z" fill="#273e37"/>
+    <path d="M809 181L817 178L825 182M804 163L813 162M824 162L833 165" fill="none"/>
+    <path d="M808 169H812M825 169H829M819 170L816 179L820 180" fill="none" stroke-width="2"/>
+    <path d="M799 147L799 129Q820 119 839 134L840 150" fill="#243d36"/>
+    <path d="M775 128L827 116L860 130L807 144Z" fill="#243e38" stroke="#dcb769"/>
+    <g stroke="#d9b463" stroke-width="1.5"><path d="M779 130V158M790 133V166M802 137V168M814 140V168M828 137V164M842 133V161M854 131V153"/></g>
+    <g><use href="#bead" x="779" y="158"/><use href="#bead" x="790" y="166"/><use href="#bead" x="802" y="168"/><use href="#bead" x="814" y="168"/><use href="#bead" x="828" y="164"/><use href="#bead" x="842" y="161"/><use href="#bead" x="854" y="153"/></g>
+    <path d="M837 248Q853 239 858 252L852 259L844 256L854 270M789 320L806 325L799 341M858 319L871 324" fill="none" stroke="#c7a255" stroke-width="2"/>
+    <path d="M920 261L947 261L947 285L936 293L920 283Z" fill="#ce6747"/>
+    <path d="M919 280L932 282L929 305L916 302Z" fill="#314e48"/>
+    <path d="M924 249H944V264H924Z" fill="#2f4b46"/>
+    <path d="M931 285V317" stroke="#798f87" stroke-width="6"/><path d="M931 307V323" stroke="#334d47" stroke-width="3"/>
+    <path d="M950 272Q959 281 951 290M958 265Q973 280 960 296" fill="none" stroke="#ba7b42" stroke-width="2"/>
+    <path d="M873 328L966 328L985 343L891 343Z" fill="#c7d3c4"/>
+    <path d="M891 343V358M976 344V356" fill="none" stroke="#567169" stroke-width="5"/>
+    <use href="#screw" x="931" y="322"/><use href="#screw" x="904" y="333"/>
+    <path d="M923 320L917 314M941 320L947 313" stroke="#f0c254" stroke-width="2"/>
+  </g>
+  <!-- 对白只显示题目所求数值。 -->
+  <g stroke="#2f5354" stroke-width="4" stroke-linejoin="round">
+    <path d="M1167 222Q1158 188 1200 169Q1254 146 1371 161Q1446 169 1455 218Q1464 271 1415 290Q1361 310 1233 292L1140 351L1189 280Q1164 258 1167 222Z" fill="#fffbed"/>
+    <path d="M1201 179Q1275 159 1358 172" fill="none" stroke="#e6d9ac" stroke-width="2"/>
+  </g>
+  <text x="1310" y="264" text-anchor="middle" fill="#c44d3e" font-family="'Arial Black','DejaVu Sans',sans-serif" font-weight="900" font-size="102">29!</text>
+  <g fill="none" stroke="#376467" stroke-width="3" stroke-linecap="round"><path d="M1136 376L1154 364M1150 399L1172 395M1130 357L1138 339"/></g>
+  <g font-family="'Noto Sans CJK SC','Microsoft YaHei',sans-serif" fill="#315e5e">
+    <text x="79" y="1135" font-size="16">不可能的飞行，确定的答案。</text>
+    <text x="1515" y="1135" text-anchor="end" font-size="13" letter-spacing="2">CLOUD CRUISE / 001</text>
+  </g>
+</svg>

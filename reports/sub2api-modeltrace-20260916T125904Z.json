@@ -1,0 +1,272 @@
+{
+  "created_at": "2026-09-16T12:59:04.830961+00:00",
+  "requested_model": "gpt-5.6-sol",
+  "protocol": "responses",
+  "fast_mode": false,
+  "summary": {
+    "accounts": 5,
+    "completed": 3,
+    "passed": 3
+  },
+  "results": [
+    {
+      "account": "codexfor",
+      "tested_model": "gpt-5.6-sol",
+      "fast_mode": false,
+      "passed": true,
+      "top_model": {
+        "model": "gpt-5.6-sol",
+        "display_name": "gpt-5.6-sol",
+        "probability": 0.7189100509345446
+      },
+      "used_outputs": 2,
+      "error": null,
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 9220,
+        "output_tokens": 2944,
+        "reasoning_tokens": 1684
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-2-55ccbc927a434c",
+          "expected_count": 307,
+          "parsed_count": 0,
+          "elapsed_seconds": 61.329,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-2-55ccbc927a434c: Request failed for https://blackaicoding.com/v1/responses: stream ended before response.completed"
+        },
+        {
+          "challenge_id": "probe-1-b6a74ed26d3e92",
+          "expected_count": 323,
+          "parsed_count": 323,
+          "elapsed_seconds": 87.728,
+          "attempts": 1,
+          "output_tokens": 1523,
+          "reasoning_tokens": 870,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-3-96bb4abbd68cfd",
+          "expected_count": 300,
+          "parsed_count": 300,
+          "elapsed_seconds": 93.26,
+          "attempts": 1,
+          "output_tokens": 1421,
+          "reasoning_tokens": 814,
+          "error": null
+        }
+      ],
+      "probe_errors": [
+        "probe-2-55ccbc927a434c: Request failed for https://blackaicoding.com/v1/responses: stream ended before response.completed"
+      ]
+    },
+    {
+      "account": "hetune015",
+      "tested_model": "gpt-5.6-sol",
+      "fast_mode": false,
+      "passed": true,
+      "top_model": {
+        "model": "gpt-5.6-sol",
+        "display_name": "gpt-5.6-sol",
+        "probability": 0.7724680985209829
+      },
+      "used_outputs": 3,
+      "error": null,
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 701,
+        "output_tokens": 4421,
+        "reasoning_tokens": 2484
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-3-319369ca717cec",
+          "expected_count": 303,
+          "parsed_count": 303,
+          "elapsed_seconds": 19.988,
+          "attempts": 1,
+          "output_tokens": 1370,
+          "reasoning_tokens": 757,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-1-bbd23c4493bb17",
+          "expected_count": 322,
+          "parsed_count": 322,
+          "elapsed_seconds": 30.387,
+          "attempts": 1,
+          "output_tokens": 1479,
+          "reasoning_tokens": 828,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-2-3ea57ebc16eff0",
+          "expected_count": 333,
+          "parsed_count": 333,
+          "elapsed_seconds": 37.971,
+          "attempts": 1,
+          "output_tokens": 1572,
+          "reasoning_tokens": 899,
+          "error": null
+        }
+      ],
+      "probe_errors": []
+    },
+    {
+      "account": "hetune025",
+      "tested_model": "gpt-5.6-sol",
+      "fast_mode": false,
+      "passed": true,
+      "top_model": {
+        "model": "gpt-5.6-sol",
+        "display_name": "gpt-5.6-sol",
+        "probability": 0.991407300543106
+      },
+      "used_outputs": 3,
+      "error": null,
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 694,
+        "output_tokens": 4208,
+        "reasoning_tokens": 2329
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-3-0adb0d6156bb39",
+          "expected_count": 305,
+          "parsed_count": 305,
+          "elapsed_seconds": 27.363,
+          "attempts": 1,
+          "output_tokens": 1411,
+          "reasoning_tokens": 794,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-1-3330a90cc4e91b",
+          "expected_count": 300,
+          "parsed_count": 300,
+          "elapsed_seconds": 32.876,
+          "attempts": 1,
+          "output_tokens": 1354,
+          "reasoning_tokens": 747,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-2-3abb00e164c7f4",
+          "expected_count": 324,
+          "parsed_count": 324,
+          "elapsed_seconds": 40.713,
+          "attempts": 1,
+          "output_tokens": 1443,
+          "reasoning_tokens": 788,
+          "error": null
+        }
+      ],
+      "probe_errors": []
+    },
+    {
+      "account": "lucoo015",
+      "tested_model": "gpt-5.6-sol",
+      "fast_mode": false,
+      "passed": false,
+      "top_model": null,
+      "error": "probe-1-2535982024e8e5: 数字个数不符 335/297",
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 4611,
+        "output_tokens": 762,
+        "reasoning_tokens": 85
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-3-4f80456e66d741",
+          "expected_count": 329,
+          "parsed_count": 0,
+          "elapsed_seconds": 30.547,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-3-4f80456e66d741: Request failed for https://lucoo.ai/v1/responses: The read operation timed out"
+        },
+        {
+          "challenge_id": "probe-2-74cdc1bc4ffc4c",
+          "expected_count": 304,
+          "parsed_count": 0,
+          "elapsed_seconds": 31.652,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-2-74cdc1bc4ffc4c: Request failed for https://lucoo.ai/v1/responses: The read operation timed out"
+        },
+        {
+          "challenge_id": "probe-1-2535982024e8e5",
+          "expected_count": 297,
+          "parsed_count": 335,
+          "elapsed_seconds": 67.824,
+          "attempts": 1,
+          "output_tokens": 762,
+          "reasoning_tokens": 85,
+          "error": "probe-1-2535982024e8e5: 数字个数不符 335/297"
+        }
+      ],
+      "probe_errors": [
+        "probe-3-4f80456e66d741: Request failed for https://lucoo.ai/v1/responses: The read operation timed out",
+        "probe-2-74cdc1bc4ffc4c: Request failed for https://lucoo.ai/v1/responses: The read operation timed out",
+        "probe-1-2535982024e8e5: 数字个数不符 335/297"
+      ]
+    },
+    {
+      "account": "lucoo018",
+      "tested_model": "gpt-5.6-sol",
+      "fast_mode": false,
+      "passed": false,
+      "top_model": null,
+      "error": "probe-3-a577daba93337f: 数字个数不符 317/318",
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 9229,
+        "output_tokens": 2977,
+        "reasoning_tokens": 1669
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-1-5b87e78b505503",
+          "expected_count": 302,
+          "parsed_count": 0,
+          "elapsed_seconds": 30.672,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-1-5b87e78b505503: Request failed for https://lucoo.ai/v1/responses: The read operation timed out"
+        },
+        {
+          "challenge_id": "probe-3-a577daba93337f",
+          "expected_count": 318,
+          "parsed_count": 317,
+          "elapsed_seconds": 30.997,
+          "attempts": 1,
+          "output_tokens": 1498,
+          "reasoning_tokens": 857,
+          "error": "probe-3-a577daba93337f: 数字个数不符 317/318"
+        },
+        {
+          "challenge_id": "probe-2-fac76efdff9ab5",
+          "expected_count": 330,
+          "parsed_count": 330,
+          "elapsed_seconds": 42.849,
+          "attempts": 1,
+          "output_tokens": 1479,
+          "reasoning_tokens": 812,
+          "error": null
+        }
+      ],
+      "probe_errors": [
+        "probe-1-5b87e78b505503: Request failed for https://lucoo.ai/v1/responses: The read operation timed out",
+        "probe-3-a577daba93337f: 数字个数不符 317/318"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#eef8f7">
+<title>蔡徐坤 · 骑车打篮球</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#eef8f7;color:#243640;font-family:"Noto Sans CJK SC","Microsoft YaHei",sans-serif}
+main{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:18px}
+.scene{width:min(100%,1000px);line-height:0}
+.scene>svg{display:block;width:100%;height:auto;max-height:calc(100svh - 108px)}
+.controls{display:flex;align-items:center;gap:22px;width:min(100%,650px);padding:14px 4px;border-top:1px solid #a6cec4}
+button{border:1px solid #243640;background:#243640;color:#fff;width:44px;height:44px;border-radius:50%;font-size:19px;cursor:pointer;flex:none}
+button:hover{background:#39766c}
+button:focus-visible,input:focus-visible{outline:3px solid #d38438;outline-offset:4px}
+label{display:flex;align-items:center;gap:12px;flex:1;font-size:14px;white-space:nowrap}
+input{width:100%;min-width:50px;accent-color:#278872;cursor:pointer}
+output{font-variant-numeric:tabular-nums;min-width:42px;font-size:14px}
+.status{font-size:12px;color:#47736d;min-width:48px}
+@media(max-width:500px){main{padding:12px;justify-content:center}.controls{gap:14px}.scene>svg{max-height:none}.status{display:none}}
+</style>
+</head>
+<body>
+<main>
+<div class="scene">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="800" viewBox="0 0 1000 800" role="img" aria-labelledby="title desc">
+  <title id="title">蔡徐坤一边骑车一边打篮球 · 卡通创作</title>
+  <desc id="desc">银灰色中分发型的卡通人物穿着黑色背带裤，骑着绿色自行车，右手同时拍着篮球，身后是明亮的篮球场。</desc>
+  <defs>
+    <pattern id="net" width="18" height="18" patternUnits="userSpaceOnUse">
+      <path d="M0 0 18 18M18 0 0 18" fill="none" stroke="#a6bbc1" stroke-width="2"/>
+    </pattern>
+    <style>
+      .outline{stroke:#243640;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+      .detail{fill:none;stroke:#243640;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+      .motion{fill:none;stroke:#539b96;stroke-width:5;stroke-linecap:round}
+      text{font-family:'Noto Sans CJK SC','Microsoft YaHei',sans-serif}
+    </style>
+  </defs>
+
+  <path fill="#eef8f7" d="M0 0h1000v800H0z"/>
+  <circle cx="847" cy="130" r="60" fill="#ffdc71"/>
+  <path id="clouds" d="M60 254h139m-103 19h147M683 91h71" stroke="#fff" stroke-width="14" stroke-linecap="round"/>
+  <text x="65" y="95" font-size="44" font-weight="900" fill="#243640">骑得稳，球也稳。</text>
+  <text x="68" y="134" font-size="17" fill="#56817f" letter-spacing="0">蔡徐坤 · 双线操作 / CARTOON EDITION</text>
+
+  <!-- 球场与远处的篮架 -->
+  <path d="M0 566h1000v234H0z" fill="#c8e7df"/>
+  <path d="M0 711h1000M79 800l189-234m-31 234 124-234M706 800l-77-234" fill="none" stroke="#f7fffa" stroke-width="5"/>
+  <ellipse cx="519" cy="711" rx="376" ry="37" fill="#9fcfc1" opacity=".5"/>
+  <path d="M896 565V296" stroke="#94b6b7" stroke-width="12"/>
+  <rect x="813" y="211" width="133" height="99" rx="5" fill="#fff" stroke="#94b6b7" stroke-width="6"/>
+  <path d="M848 252h61v45h-61z" fill="none" stroke="#e39a83" stroke-width="5"/>
+  <path d="m845 306 12 66h43l13-66" fill="url(#net)" stroke="#94b6b7" stroke-width="3"/>
+  <path d="M837 306h83" stroke="#eb8368" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- 自行车：辐条、轮胎与车架 -->
+  <g class="outline" fill="#f7fcfa">
+    <circle cx="281" cy="611" r="112"/>
+    <circle cx="649" cy="611" r="112"/>
+  </g>
+  <g stroke="#b2c7c9" stroke-width="3" fill="none">
+    <path id="rear-spokes" d="M281 508v206m-103-103h206m-176-73 146 146m-146 0 146-146"/><path id="front-spokes" d="M649 508v206m-103-103h206m-176-73 146 146m-146 0 146-146"/>
+    <circle cx="281" cy="611" r="98"/><circle cx="649" cy="611" r="98"/>
+  </g>
+  <path d="m281 611 109-166 85 166H281l279-166-85 166m85-166 89 166M390 445l-16-45m186 45-22-80h43" fill="none" stroke="#243640" stroke-width="16" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="m281 611 109-166 85 166H281l279-166-85 166m85-166 89 166" fill="none" stroke="#30ad94" stroke-width="9" stroke-linejoin="round"/>
+  <path d="M346 401h58M545 365h41" stroke="#243640" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="475" cy="611" r="22" fill="#e7efeb" class="outline"/>
+  <path id="crank" d="m475 611 33 28h26m-59-28-28-31h-23" class="detail"/>
+  <circle cx="281" cy="611" r="9" fill="#243640"/><circle cx="649" cy="611" r="9" fill="#243640"/>
+
+  <!-- 远侧的腿 -->
+  <path id="far-leg" d="m433 389 79 86-65 83" fill="none" stroke="#243640" stroke-width="46" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="far-shoe" d="m442 542-20 27c-4 8 0 15 12 16l46-1c11-1 13-12 4-17l-21-12" fill="#f9fbf6" class="outline"/>
+
+  <!-- 身体、背带与握车把的手 -->
+  <path d="m421 269-42 25-16 82 53 35 68-24-15-87z" fill="#b7bdc8" class="outline"/>
+  <path d="m392 285-12 87 37 30 62-18-25-99-13-5 9 66-48 7 6-70z" fill="#292f3a"/>
+  <path d="m399 304-4 39m53-37 7 31" stroke="#f0f1eb" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="394" cy="351" r="4" fill="#ffdb79"/><circle cx="457" cy="346" r="4" fill="#ffdb79"/>
+  <path d="m471 305 44 35 47 15" fill="none" stroke="#243640" stroke-width="31" stroke-linecap="round"/>
+  <path d="m473 305 42 35 47 15" fill="none" stroke="#b7bdc8" stroke-width="20" stroke-linecap="round"/>
+  <path d="m561 345 19 8c12 8 5 23-7 18l-19-10" fill="#f0be9d" class="outline"/>
+
+  <!-- 近侧腿与踏板 -->
+  <path id="near-leg" d="m408 390-30 69 74 65 39 92" fill="none" stroke="#303642" stroke-width="49" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="seam" d="m397 420-13 34 84 71 30 72" fill="none" stroke="#58606b" stroke-width="5" stroke-linecap="round"/>
+  <path id="near-shoe" d="m479 609 26-6 12 17 31 11c12 6 10 18-3 19h-53c-12-1-17-7-16-16z" fill="#f9fbf6" class="outline"/>
+  <path id="laces" d="M483 639h64m-39-18 12 2" class="detail"/>
+
+  <!-- 颈部与卡通面部 -->
+  <path d="m419 246 1 29c8 13 26 11 33-1l-5-36" fill="#f0be9d" class="outline"/>
+  <path d="m394 192 3 39c2 31 27 49 52 43 27-7 43-31 38-61l-9-34z" fill="#f5c9ab" class="outline"/>
+  <path d="M399 219c-22-14-26 15-7 25l11 1" fill="#f5c9ab" class="outline"/>
+  <path d="M392 221c-15-18-15-56 8-75 21-19 48-17 66-7 29 2 41 30 32 57l-12 24-7-36c-19-3-33-14-41-25-7 25-25 33-40 35z" fill="#a9adb9" class="outline"/>
+  <path d="M437 153c-16-12-35 2-39 22m45-21c20-3 37 10 43 24m-51-19-18 25" fill="none" stroke="#dce0e6" stroke-width="6" stroke-linecap="round"/>
+  <path d="m414 216 14-3m27-2 13 2" class="detail"/>
+  <path d="M424 225v5m35-6v5" stroke="#243640" stroke-width="5" stroke-linecap="round"/>
+  <path d="m443 227-2 13h6m-19 11c9 7 19 5 26-2" class="detail"/>
+  <path d="m406 240 9 2m50-2 8-3" stroke="#e6a08e" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- 伸出的运球手与篮球 -->
+  <path id="arm-outline" d="m474 300 69-21 76 53" fill="none" stroke="#243640" stroke-width="33" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="arm" d="m474 300 69-21 76 53" fill="none" stroke="#b7bdc8" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="hand" d="m612 320 24 8 22 20c6 6 0 14-7 10l-17-12 9 14c4 7-3 12-9 7l-20-20-10-6" fill="#f5c9ab" class="outline"/>
+  <g id="ball" transform="translate(714 459) rotate(-18)">
+    <circle r="66" fill="#f3954e" class="outline"/>
+    <path d="M-63-17c33 20 88 20 126 0M0-66v132M-43-48C5-32 5 33-43 49m86-98C-5-32-5 33 43 49" class="detail"/>
+    <path d="M-42-29c4-9 10-15 17-19" fill="none" stroke="#ffd09a" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <path id="ball-lines" d="m687 361 5 17m29-25 2 17m35 186 4 20m-34-15 2 25" fill="none" stroke="#e1a35e" stroke-width="5" stroke-linecap="round"/>
+  <ellipse id="ball-shadow" cx="739" cy="640" rx="48" ry="10" fill="#76b8a7" opacity=".6"/>
+  <path id="impact" d="m722 616 12-14m19 15 9-16" class="motion"/>
+  <path id="speed-lines" d="M128 439h110m-139 30h108m-76 31h65M84 596h41" class="motion"/>
+  <path d="m796 410 9-17m7 36 18-5" stroke="#e5b449" stroke-width="5" stroke-linecap="round"/>
+  <text x="66" y="759" font-size="15" fill="#47736d">两轮向前，篮球在线。</text>
+  <text x="934" y="759" text-anchor="end" font-size="13" fill="#47736d">虚构场景 · 卡通演绎</text>
+</svg>
+
+</div>
+<div class="controls" aria-label="动画控制">
+<button id="play" type="button" aria-label="暂停动画" title="暂停动画">Ⅱ</button>
+<label for="speed">速度 <input id="speed" type="range" min="0.5" max="2" value="1" step="0.25"></label>
+<output id="rate" for="speed">1×</output>
+<span id="status" class="status" aria-live="polite">播放中</span>
+</div>
+</main>
+<script>
+"use strict";
+const $ = id => document.getElementById(id);
+const TAU = Math.PI * 2;
+const CYCLE_SECONDS = 1.35;
+const CRANK_RADIUS = 39;
+const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
+let playing = !reducedMotion.matches;
+let elapsed = 0;
+let previous = null;
+let speed = 1;
+const nodes = Object.fromEntries([
+  "rear-spokes", "front-spokes", "ball", "ball-shadow", "hand", "arm", "arm-outline",
+  "near-leg", "far-leg", "near-shoe", "far-shoe", "laces", "seam", "crank",
+  "impact", "ball-lines", "speed-lines", "clouds"
+].map(id => [id, $(id)]));
+const attr = (id, name, value) => nodes[id].setAttribute(name, value);
+function move(id, x, y) {
+  attr(id, "transform", "translate(" + x + " " + y + ")");
+}
+function drawLeg(side, phase) {
+  const x = 475 + Math.cos(phase) * CRANK_RADIUS;
+  const y = 611 + Math.sin(phase) * CRANK_RADIUS;
+  const hipX = side === "near" ? 408 : 433;
+  const ankleY = y - 25;
+  // 固定两段腿长，用几何交点保持膝盖与踏板连续连接。
+  const dx = x - hipX, dy = ankleY - 390;
+  const length = Math.hypot(dx, dy);
+  const limb = 136;
+  const bend = Math.sqrt(Math.max(0, limb * limb - length * length / 4));
+  const kneeX = (hipX + x) / 2 + dy / length * bend;
+  const kneeY = (390 + ankleY) / 2 - dx / length * bend;
+  const path = "M" + hipX + " 390 L" + kneeX + " " + kneeY + " L" + x + " " + ankleY;
+  attr(side + "-leg", "d", path);
+  if (side === "near") {
+    attr("seam", "d", path);
+    move("near-shoe", x - 492, y - 644);
+    move("laces", x - 492, y - 644);
+  } else {
+    move("far-shoe", x - 447, y - 580);
+  }
+  return {x, y};
+}
+function draw(time) {
+  const phase = time / CYCLE_SECONDS * TAU;
+  attr("rear-spokes", "transform", "rotate(" + phase * 90 + " 281 611)");
+  attr("front-spokes", "transform", "rotate(" + phase * 90 + " 649 611)");
+  const near = drawLeg("near", phase);
+  const far = drawLeg("far", phase + Math.PI);
+  attr("crank", "d", "M" + far.x + " " + far.y + " L475 611 L" + near.x + " " + near.y
+    + " m-15 0h35 M" + far.x + " " + far.y + " m-15 0h35");
+  const cycle = (time / (CYCLE_SECONDS / 2)) % 1;
+  const fall = cycle < 0.5 ? cycle * 2 : (1 - cycle) * 2;
+  const height = fall * fall;
+  const squash = Math.max(0, (height - 0.88) / 0.12);
+  const scaleY = 1 - squash * 0.17;
+  const ballY = 425 + height * 216 + (1 - scaleY) * 66;
+  attr("ball", "transform", "translate(740 " + ballY + ") scale(" + (1 + squash * 0.12)
+    + " " + scaleY + ") rotate(" + time * 125 + ")");
+  const handY = 12 + Math.sin(cycle * TAU) * 16;
+  move("hand", 105, handY);
+  const armPath = "M474 300 Q575 265 724 " + (332 + handY);
+  attr("arm", "d", armPath);
+  attr("arm-outline", "d", armPath);
+  attr("ball-shadow", "cy", 713);
+  attr("ball-shadow", "rx", 28 + height * 29);
+  attr("ball-shadow", "opacity", 0.18 + height * 0.4);
+  move("impact", 0, 84);
+  attr("impact", "opacity", squash);
+  attr("ball-lines", "opacity", 0);
+  move("speed-lines", -((time * 150) % 80), 0);
+  attr("speed-lines", "opacity", 0.35 + Math.sin(phase) ** 2 * 0.5);
+  move("clouds", -((time * 12) % 300), 0);
+}
+function syncControls() {
+  $("play").textContent = playing ? "Ⅱ" : "▶";
+  const label = playing ? "暂停动画" : "播放动画";
+  $("play").setAttribute("aria-label", label);
+  $("play").title = label;
+  $("status").textContent = playing ? "播放中" : "已暂停";
+}
+$("play").addEventListener("click", () => {
+  playing = !playing;
+  syncControls();
+});
+$("speed").addEventListener("input", event => {
+  speed = Number(event.target.value);
+  $("rate").textContent = speed + "×";
+});
+reducedMotion.addEventListener("change", event => {
+  if (event.matches) { playing = false; syncControls(); }
+});
+document.addEventListener("visibilitychange", () => { previous = null; });
+function frame(now) {
+  if (previous !== null && playing && !document.hidden) {
+    elapsed += Math.min((now - previous) / 1000, 0.05) * speed;
+    draw(elapsed);
+  }
+  previous = now;
+  requestAnimationFrame(frame);
+}
+draw(0);
+syncControls();
+requestAnimationFrame(frame);
+</script>
+</body>
+</html>

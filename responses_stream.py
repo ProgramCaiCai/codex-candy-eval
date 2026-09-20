@@ -42,13 +42,19 @@ class IncompleteStreamError(RuntimeError):
 
 
 def stream_response_request(
-    url: str, payload: dict[str, Any], token: str, *, timeout: float
+    url: str, payload: dict[str, Any], token: str, *, timeout: float,
+    headers: dict[str, str] | None = None,
+    max_retries: int = MAX_RETRIES,
+    total_timeout: float | None = None,
 ) -> ResponseResult:
     last_error: RuntimeError | None = None
     last_cause: BaseException | None = None
-    for retry in range(MAX_RETRIES + 1):
+    deadline = time.monotonic() + total_timeout if total_timeout is not None else None
+    for retry in range(max_retries + 1):
         try:
-            result = _request_once(url, payload, token, timeout=timeout)
+            result = _request_once(
+                url, payload, token, timeout=timeout, headers=headers, deadline=deadline,
+            )
             return replace(result, attempts=retry + 1)
         except urllib.error.HTTPError as exc:
             raw = exc.read(64 * 1024).decode("utf-8", "replace")
@@ -60,7 +66,7 @@ def stream_response_request(
             last_error = RuntimeError(f"Request failed for {_safe_origin(url)}: {_error_reason(exc)}")
             last_cause = exc
             retryable = True
-        if not retryable or retry == MAX_RETRIES:
+        if not retryable or retry == max_retries:
             attempts = retry + 1
             suffix = f" (after {attempts} attempts)" if attempts > 1 else ""
             raise RequestError(f"{last_error}{suffix}", attempts) from last_cause
@@ -69,7 +75,9 @@ def stream_response_request(
 
 
 def _request_once(
-    url: str, payload: dict[str, Any], token: str, *, timeout: float
+    url: str, payload: dict[str, Any], token: str, *, timeout: float,
+    headers: dict[str, str] | None = None,
+    deadline: float | None = None,
 ) -> ResponseResult:
     body = json.dumps(payload, ensure_ascii=False).encode()
     request = urllib.request.Request(
@@ -82,17 +90,21 @@ def _request_once(
             "User-Agent": CODEX_USER_AGENT,
             "originator": CODEX_ORIGINATOR,
             "Authorization": f"Bearer {token}",
+            **(headers or {}),
         },
     )
-    with urllib.request.urlopen(request, timeout=timeout) as response:
-        return _parse_sse_response(response)
+    read_timeout = min(timeout, 30.0) if deadline is not None else timeout
+    with urllib.request.urlopen(request, timeout=read_timeout) as response:
+        return _parse_sse_response(response, deadline)
 
 
-def _parse_sse_response(response: Any) -> ResponseResult:
+def _parse_sse_response(response: Any, deadline: float | None = None) -> ResponseResult:
     deltas: list[str] = []
     completed: dict[str, Any] = {}
     data_lines: list[str] = []
     for raw_line in response:
+        if deadline is not None and time.monotonic() >= deadline:
+            raise TimeoutError("total request timeout exceeded")
         line = raw_line.decode("utf-8", "replace").rstrip("\r\n")
         if line.startswith("data:"):
             data_lines.append(line[5:].lstrip())

@@ -50,6 +50,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--account", help="只测试名称包含该文本的账号（不区分大小写）")
     parser.add_argument("--inject-prompt", action="store_true",
                         help="注入 candy_eval 同目录的 system_prompt.txt")
+    parser.add_argument("--inject-header", action="store_true",
+                        help="注入 x-codex-routing-hint: model=<实际模型名>;tier=default")
     parser.add_argument("--list-only", action="store_true", help="只列出匹配账号，不发送模型请求")
     parser.add_argument("--output", help="JSON 报告路径；默认写入 reports/ 下的时间戳文件")
     return parser.parse_args()
@@ -84,6 +86,7 @@ def run_one(
         timeout=args.timeout,
         protocol=args.protocol,
         system_prompt=getattr(args, "system_prompt", None),
+        inject_header=getattr(args, "inject_header", False),
     )
     correct = result["correct"] if isinstance(result["correct"], bool) else None
     elapsed = float(result["elapsed_seconds"])

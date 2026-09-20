@@ -89,6 +89,7 @@ class CandyEvalCLIContractTest(unittest.TestCase):
             1, target.responses_url, target.api_key, model=target.model,
             reasoning_effort="high", timeout=10, protocol="anthropic",
             system_prompt="system instructions",
+            inject_header=False,
         )
 
     def test_sub2api_entry_defaults_match_direct_entry(self) -> None:

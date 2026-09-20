@@ -1,0 +1,373 @@
+{
+  "created_at": "2026-09-18T02:41:23.935158+00:00",
+  "requested_model": "gpt-6-astra",
+  "protocol": "responses",
+  "fast_mode": false,
+  "summary": {
+    "accounts": 7,
+    "completed": 4,
+    "passed": 3
+  },
+  "results": [
+    {
+      "account": "codexfor",
+      "tested_model": "gpt-6-astra",
+      "fast_mode": false,
+      "passed": false,
+      "top_model": {
+        "model": "gpt-5.6-luna",
+        "display_name": "gpt-5.6-luna",
+        "probability": 0.9999364943639646
+      },
+      "used_outputs": 3,
+      "error": null,
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 727,
+        "output_tokens": 13325,
+        "reasoning_tokens": 11368
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-3-320c9ebc48a357",
+          "expected_count": 331,
+          "parsed_count": 331,
+          "elapsed_seconds": 80.719,
+          "attempts": 1,
+          "output_tokens": 4293,
+          "reasoning_tokens": 3624,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-1-eaf618c60f720a",
+          "expected_count": 316,
+          "parsed_count": 316,
+          "elapsed_seconds": 81.218,
+          "attempts": 1,
+          "output_tokens": 4376,
+          "reasoning_tokens": 3737,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-2-0c3fda0c45c132",
+          "expected_count": 321,
+          "parsed_count": 321,
+          "elapsed_seconds": 86.066,
+          "attempts": 1,
+          "output_tokens": 4656,
+          "reasoning_tokens": 4007,
+          "error": null
+        }
+      ],
+      "probe_errors": []
+    },
+    {
+      "account": "foxcode",
+      "tested_model": "gpt-6-astra",
+      "fast_mode": false,
+      "passed": false,
+      "top_model": null,
+      "error": "probe-2-265af2c5c49625: 数字个数不符 334/327",
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 700,
+        "output_tokens": 1838,
+        "reasoning_tokens": 430
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-3-ac0f4dcf2eaff3",
+          "expected_count": 324,
+          "parsed_count": 0,
+          "elapsed_seconds": 30.359,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-3-ac0f4dcf2eaff3: Request failed for https://code1.newcli.com/codex/v1/responses: The read operation timed out"
+        },
+        {
+          "challenge_id": "probe-1-acbb0db37d682f",
+          "expected_count": 329,
+          "parsed_count": 329,
+          "elapsed_seconds": 36.541,
+          "attempts": 1,
+          "output_tokens": 929,
+          "reasoning_tokens": 200,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-2-265af2c5c49625",
+          "expected_count": 327,
+          "parsed_count": 334,
+          "elapsed_seconds": 44.375,
+          "attempts": 1,
+          "output_tokens": 909,
+          "reasoning_tokens": 230,
+          "error": "probe-2-265af2c5c49625: 数字个数不符 334/327"
+        }
+      ],
+      "probe_errors": [
+        "probe-3-ac0f4dcf2eaff3: Request failed for https://code1.newcli.com/codex/v1/responses: The read operation timed out",
+        "probe-2-265af2c5c49625: 数字个数不符 334/327"
+      ]
+    },
+    {
+      "account": "hetune015",
+      "tested_model": "gpt-6-astra",
+      "fast_mode": false,
+      "passed": true,
+      "top_model": {
+        "model": "gpt-6-astra",
+        "display_name": "gpt-6-astra",
+        "probability": 0.999229447000879
+      },
+      "used_outputs": 3,
+      "error": null,
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 705,
+        "output_tokens": 4177,
+        "reasoning_tokens": 2266
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-1-c9130357c4728e",
+          "expected_count": 313,
+          "parsed_count": 313,
+          "elapsed_seconds": 29.683,
+          "attempts": 1,
+          "output_tokens": 1371,
+          "reasoning_tokens": 738,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-3-c87bc9d565b2dd",
+          "expected_count": 302,
+          "parsed_count": 302,
+          "elapsed_seconds": 36.698,
+          "attempts": 1,
+          "output_tokens": 1333,
+          "reasoning_tokens": 722,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-2-bc0f01c88c2d67",
+          "expected_count": 330,
+          "parsed_count": 330,
+          "elapsed_seconds": 41.72,
+          "attempts": 1,
+          "output_tokens": 1473,
+          "reasoning_tokens": 806,
+          "error": null
+        }
+      ],
+      "probe_errors": []
+    },
+    {
+      "account": "hetune025",
+      "tested_model": "gpt-6-astra",
+      "fast_mode": false,
+      "passed": true,
+      "top_model": {
+        "model": "gpt-6-astra",
+        "display_name": "gpt-6-astra",
+        "probability": 0.9813242650202734
+      },
+      "used_outputs": 3,
+      "error": null,
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 698,
+        "output_tokens": 4200,
+        "reasoning_tokens": 2285
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-1-bd1ce9b83e50a3",
+          "expected_count": 301,
+          "parsed_count": 301,
+          "elapsed_seconds": 31.317,
+          "attempts": 1,
+          "output_tokens": 1331,
+          "reasoning_tokens": 722,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-3-eed3f016f2677a",
+          "expected_count": 317,
+          "parsed_count": 317,
+          "elapsed_seconds": 32.543,
+          "attempts": 1,
+          "output_tokens": 1396,
+          "reasoning_tokens": 755,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-2-7d58970d80da45",
+          "expected_count": 329,
+          "parsed_count": 329,
+          "elapsed_seconds": 33.399,
+          "attempts": 1,
+          "output_tokens": 1473,
+          "reasoning_tokens": 808,
+          "error": null
+        }
+      ],
+      "probe_errors": []
+    },
+    {
+      "account": "lucen_low",
+      "tested_model": "gpt-6-astra",
+      "fast_mode": false,
+      "passed": null,
+      "top_model": null,
+      "error": "没有可用回答：模型未返回足够的完整数字序列",
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-2-a9fd3ae4de9f7c",
+          "expected_count": 301,
+          "parsed_count": 0,
+          "elapsed_seconds": 30.331,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-2-a9fd3ae4de9f7c: Request failed for https://lucen.plus/v1/responses: The read operation timed out"
+        },
+        {
+          "challenge_id": "probe-1-bb2dfb016d0e16",
+          "expected_count": 317,
+          "parsed_count": 0,
+          "elapsed_seconds": 180.089,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-1-bb2dfb016d0e16: Request failed for https://lucen.plus/v1/responses: total request timeout exceeded"
+        },
+        {
+          "challenge_id": "probe-3-cc7a5053d2bb45",
+          "expected_count": 304,
+          "parsed_count": 0,
+          "elapsed_seconds": 180.133,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-3-cc7a5053d2bb45: Request failed for https://lucen.plus/v1/responses: total request timeout exceeded"
+        }
+      ],
+      "probe_errors": [
+        "probe-2-a9fd3ae4de9f7c: Request failed for https://lucen.plus/v1/responses: The read operation timed out",
+        "probe-1-bb2dfb016d0e16: Request failed for https://lucen.plus/v1/responses: total request timeout exceeded",
+        "probe-3-cc7a5053d2bb45: Request failed for https://lucen.plus/v1/responses: total request timeout exceeded"
+      ]
+    },
+    {
+      "account": "lucoo015",
+      "tested_model": "gpt-6-astra",
+      "fast_mode": false,
+      "passed": null,
+      "top_model": null,
+      "error": "没有可用回答：模型未返回足够的完整数字序列",
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-3-2c362c8e7d4832",
+          "expected_count": 310,
+          "parsed_count": 0,
+          "elapsed_seconds": 5.624,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-3-2c362c8e7d4832: Request failed for https://lucoo.ai/v1/responses: stream ended before response.completed"
+        },
+        {
+          "challenge_id": "probe-1-c7e06e04723588",
+          "expected_count": 297,
+          "parsed_count": 0,
+          "elapsed_seconds": 26.605,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-1-c7e06e04723588: Request failed for https://lucoo.ai/v1/responses: stream ended before response.completed"
+        },
+        {
+          "challenge_id": "probe-2-3438457641577c",
+          "expected_count": 304,
+          "parsed_count": 0,
+          "elapsed_seconds": 30.701,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-2-3438457641577c: Request failed for https://lucoo.ai/v1/responses: The read operation timed out"
+        }
+      ],
+      "probe_errors": [
+        "probe-3-2c362c8e7d4832: Request failed for https://lucoo.ai/v1/responses: stream ended before response.completed",
+        "probe-1-c7e06e04723588: Request failed for https://lucoo.ai/v1/responses: stream ended before response.completed",
+        "probe-2-3438457641577c: Request failed for https://lucoo.ai/v1/responses: The read operation timed out"
+      ]
+    },
+    {
+      "account": "lucoo018",
+      "tested_model": "gpt-6-astra",
+      "fast_mode": false,
+      "passed": true,
+      "top_model": {
+        "model": "gpt-6-astra",
+        "display_name": "gpt-6-astra",
+        "probability": 0.9983324249513047
+      },
+      "used_outputs": 3,
+      "error": null,
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 13039,
+        "output_tokens": 4109,
+        "reasoning_tokens": 2248
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-2-2e6f435fcca872",
+          "expected_count": 310,
+          "parsed_count": 310,
+          "elapsed_seconds": 44.573,
+          "attempts": 1,
+          "output_tokens": 1377,
+          "reasoning_tokens": 750,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-3-34005a690d3bd1",
+          "expected_count": 299,
+          "parsed_count": 299,
+          "elapsed_seconds": 44.759,
+          "attempts": 1,
+          "output_tokens": 1338,
+          "reasoning_tokens": 733,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-1-d1ab916451cb9b",
+          "expected_count": 311,
+          "parsed_count": 311,
+          "elapsed_seconds": 50.725,
+          "attempts": 1,
+          "output_tokens": 1394,
+          "reasoning_tokens": 765,
+          "error": null
+        }
+      ],
+      "probe_errors": []
+    }
+  ]
+}

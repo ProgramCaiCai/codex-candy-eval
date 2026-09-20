@@ -1,0 +1,271 @@
+{
+  "created_at": "2026-09-16T06:42:54.658583+00:00",
+  "requested_model": "gpt-6-astra",
+  "protocol": "responses",
+  "fast_mode": false,
+  "summary": {
+    "accounts": 5,
+    "completed": 3,
+    "passed": 3
+  },
+  "results": [
+    {
+      "account": "codexfor",
+      "tested_model": "gpt-6-astra",
+      "fast_mode": false,
+      "passed": null,
+      "top_model": null,
+      "error": "没有可用回答：模型未返回足够的完整数字序列",
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-3-838736c9cb3e54",
+          "expected_count": 320,
+          "parsed_count": 0,
+          "elapsed_seconds": 0.782,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-3-838736c9cb3e54: HTTP 503: Service temporarily unavailable"
+        },
+        {
+          "challenge_id": "probe-1-c1b4004a1be8e2",
+          "expected_count": 298,
+          "parsed_count": 0,
+          "elapsed_seconds": 0.863,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-1-c1b4004a1be8e2: HTTP 503: Service temporarily unavailable"
+        },
+        {
+          "challenge_id": "probe-2-b9e81ff322dfee",
+          "expected_count": 293,
+          "parsed_count": 0,
+          "elapsed_seconds": 1.02,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-2-b9e81ff322dfee: HTTP 503: Service temporarily unavailable"
+        }
+      ],
+      "probe_errors": [
+        "probe-3-838736c9cb3e54: HTTP 503: Service temporarily unavailable",
+        "probe-1-c1b4004a1be8e2: HTTP 503: Service temporarily unavailable",
+        "probe-2-b9e81ff322dfee: HTTP 503: Service temporarily unavailable"
+      ]
+    },
+    {
+      "account": "hetune015",
+      "tested_model": "gpt-6-astra",
+      "fast_mode": false,
+      "passed": true,
+      "top_model": {
+        "model": "gpt-6-astra",
+        "display_name": "gpt-6-astra",
+        "probability": 0.9958546113715893
+      },
+      "used_outputs": 3,
+      "error": null,
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 363,
+        "output_tokens": 2848,
+        "reasoning_tokens": 961
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-2-7be8cc1258b4a6",
+          "expected_count": 313,
+          "parsed_count": 313,
+          "elapsed_seconds": 30.506,
+          "attempts": 1,
+          "output_tokens": 767,
+          "reasoning_tokens": 134,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-3-61cdfe706212f8",
+          "expected_count": 326,
+          "parsed_count": 326,
+          "elapsed_seconds": 121.99,
+          "attempts": 1,
+          "output_tokens": 741,
+          "reasoning_tokens": 82,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-1-506acec538f0d6",
+          "expected_count": 294,
+          "parsed_count": 294,
+          "elapsed_seconds": 130.827,
+          "attempts": 1,
+          "output_tokens": 1340,
+          "reasoning_tokens": 745,
+          "error": null
+        }
+      ],
+      "probe_errors": []
+    },
+    {
+      "account": "hetune025",
+      "tested_model": "gpt-6-astra",
+      "fast_mode": false,
+      "passed": true,
+      "top_model": {
+        "model": "gpt-6-astra",
+        "display_name": "gpt-6-astra",
+        "probability": 0.9411055809787093
+      },
+      "used_outputs": 3,
+      "error": null,
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 363,
+        "output_tokens": 3578,
+        "reasoning_tokens": 1655
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-3-55c8acb6c5407a",
+          "expected_count": 330,
+          "parsed_count": 330,
+          "elapsed_seconds": 33.983,
+          "attempts": 1,
+          "output_tokens": 775,
+          "reasoning_tokens": 108,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-1-95d04d4ccd7eca",
+          "expected_count": 325,
+          "parsed_count": 325,
+          "elapsed_seconds": 41.657,
+          "attempts": 1,
+          "output_tokens": 1436,
+          "reasoning_tokens": 779,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-2-bd666390230a06",
+          "expected_count": 296,
+          "parsed_count": 296,
+          "elapsed_seconds": 124.204,
+          "attempts": 1,
+          "output_tokens": 1367,
+          "reasoning_tokens": 768,
+          "error": null
+        }
+      ],
+      "probe_errors": []
+    },
+    {
+      "account": "lucoo015",
+      "tested_model": "gpt-6-astra",
+      "fast_mode": false,
+      "passed": null,
+      "top_model": null,
+      "error": "没有可用回答：模型未返回足够的完整数字序列",
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-1-b7635094ad3df2",
+          "expected_count": 325,
+          "parsed_count": 0,
+          "elapsed_seconds": 30.725,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-1-b7635094ad3df2: Request failed for https://lucoo.ai/v1/responses: The read operation timed out"
+        },
+        {
+          "challenge_id": "probe-2-2bac9d221b4264",
+          "expected_count": 303,
+          "parsed_count": 0,
+          "elapsed_seconds": 30.725,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-2-2bac9d221b4264: Request failed for https://lucoo.ai/v1/responses: The read operation timed out"
+        },
+        {
+          "challenge_id": "probe-3-987892df168ffa",
+          "expected_count": 316,
+          "parsed_count": 0,
+          "elapsed_seconds": 30.781,
+          "attempts": 1,
+          "output_tokens": null,
+          "reasoning_tokens": null,
+          "error": "probe-3-987892df168ffa: Request failed for https://lucoo.ai/v1/responses: The read operation timed out"
+        }
+      ],
+      "probe_errors": [
+        "probe-1-b7635094ad3df2: Request failed for https://lucoo.ai/v1/responses: The read operation timed out",
+        "probe-2-2bac9d221b4264: Request failed for https://lucoo.ai/v1/responses: The read operation timed out",
+        "probe-3-987892df168ffa: Request failed for https://lucoo.ai/v1/responses: The read operation timed out"
+      ]
+    },
+    {
+      "account": "lucoo018",
+      "tested_model": "gpt-6-astra",
+      "fast_mode": false,
+      "passed": true,
+      "top_model": {
+        "model": "gpt-6-astra",
+        "display_name": "gpt-6-astra",
+        "probability": 0.9526948623664145
+      },
+      "used_outputs": 3,
+      "error": null,
+      "attempted": 3,
+      "usage": {
+        "input_tokens": 12704,
+        "output_tokens": 2269,
+        "reasoning_tokens": 288
+      },
+      "probe_details": [
+        {
+          "challenge_id": "probe-2-c2f4dc02a08349",
+          "expected_count": 299,
+          "parsed_count": 305,
+          "elapsed_seconds": 42.288,
+          "attempts": 1,
+          "output_tokens": 719,
+          "reasoning_tokens": 102,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-1-a349a983471e94",
+          "expected_count": 319,
+          "parsed_count": 329,
+          "elapsed_seconds": 45.691,
+          "attempts": 1,
+          "output_tokens": 770,
+          "reasoning_tokens": 105,
+          "error": null
+        },
+        {
+          "challenge_id": "probe-3-3911a28a453994",
+          "expected_count": 333,
+          "parsed_count": 346,
+          "elapsed_seconds": 48.349,
+          "attempts": 1,
+          "output_tokens": 780,
+          "reasoning_tokens": 81,
+          "error": null
+        }
+      ],
+      "probe_errors": []
+    }
+  ]
+}
